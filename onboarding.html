@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/onboarding.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto:700,500|Poppins:600");
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(255, 255, 255, 1)">
+    <input type="hidden" id="anPageName" name="page" value="onboarding" />
+    <div class="container-center-horizontal">
+      <div class="onboarding border-1px-black screen">
+        <img class="screen-shot-202-03-02-at-315-1-C61RwL" src="img/screen-shot-2021-03-02-at-3-15-1@1x.svg" />
+        <img class="ellipse-12-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="ellipse-13-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="ellipse-14-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="ellipse-15-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="ellipse-16-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="ellipse-17-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="ellipse-18-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="ellipse-19-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="ellipse-20-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="ellipse-21-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="ellipse-22-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="ellipse-23-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="ellipse-24-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="ellipse-25-C61RwL" src="img/ellipse-12@2x.svg" />
+        <img class="rectangle-19-C61RwL" src="img/rectangle-19@1x.svg" />
+        <div class="rectangle-22-C61RwL"></div>
+        <div class="component-6-C61RwL border-1px-black">
+          <div class="topper-menu-5mfU7d">
+            <div class="menus-K8x1G6">
+              <div class="animal-CGzSaZ roboto-medium-black-11-9px">#ANIMAL</div>
+              <div class="art-CGzSaZ roboto-medium-black-11-9px">#ART</div>
+              <div class="culture-CGzSaZ roboto-medium-black-11-9px">#CULTURE</div>
+              <div class="education-CGzSaZ roboto-medium-black-11-9px">#EDUCATION</div>
+            </div>
+          </div>
+          <div class="topper-menu-O21Rxk">
+            <div class="menus-pYcilz">
+              <div class="emotion-vF0OHt roboto-medium-black-11-9px">#EMOTION</div>
+              <div class="event-vF0OHt roboto-medium-black-11-9px">#EVENT</div>
+              <div class="family-vF0OHt roboto-medium-black-11-9px">#FAMILY</div>
+              <div class="health-vF0OHt roboto-medium-black-11-9px">#HEALTH</div>
+            </div>
+          </div>
+          <div class="topper-menu-YxJKXG">
+            <div class="menus-fvr7zm">
+              <div class="history-B1waOo roboto-medium-black-11-9px">#HISTORY</div>
+              <div class="job-B1waOo roboto-medium-black-11-9px">#JOB</div>
+              <div class="event-B1waOo roboto-medium-black-11-9px">#EVENT</div>
+              <div class="person-B1waOo roboto-medium-black-11-9px">#PERSON</div>
+            </div>
+          </div>
+          <div class="frame-1-5mfU7d"></div>
+        </div>
+        <div class="component-8-C61RwL border-3px-web-orange">
+          <div class="welcome-to-ymSmVu roboto-medium-web-orange-24px">Welcome to</div>
+          <div class="brought-to-you-by-ymSmVu">Brought to you by</div>
+          <div class="we-invite-you-t-ur-list-of-tags-ymSmVu">
+            <span class="span0-HXs05N"
+              >We invite you to interact with the map below.<br /><br />Each&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              on the map is a story. Click on the story to know more about it and see it link to other related stories.
+              <br /><br />You can also use our #</span
+            ><span class="span1-HXs05N">TAGS</span
+            ><span class="span2-HXs05N">
+              above if you want to sort out stories based on our list of tags. <br /><br />
+            </span>
+          </div>
+          <img class="ftswh-title-ymSmVu" src="img/fts-wh-title@2x.svg" />
+          <img class="collaboraction-go-dark-alpha-1-ymSmVu" src="img/collaboraction-logo-dark-alpha-1@2x.svg" />
+          <img class="ellipse-27-ymSmVu" src="img/ellipse-12@2x.svg" />
+          <a href="screen-1.html#screen-1">
+            <div class="btn-ymSmVu border-0-8px-web-orange">
+              <div class="story-time-EmesU2 poppins-semi-bold-web-orange-11-9px">Story Time</div>
+            </div></a
+          >
+        </div>
+        <div class="component-5-C61RwL">
+          <div class="rectangle-24-9wWKr1 border-3px-web-orange"></div>
+          <img class="c4392d634a0148f-7b2b0ad98293b-1-9wWKr1" src="img/c4392d634a0148fda8b7b2b0ad98293b-1@2x.svg" />
+          <img class="da7ef6dd1302486-7baebe4b364bc-1-9wWKr1" src="img/da7ef6dd1302486c9a67baebe4b364bc-1@2x.svg" />
+          <img class="e0678ef25486466-ef6ad47b559e1-1-9wWKr1" src="img/e0678ef25486466ba65ef6ad47b559e1-1@2x.svg" />
+          <img class="e9bb463a1bc4434-3b81b1fe937f5-1-9wWKr1" src="img/e9bb463a1bc4434c9d33b81b1fe937f5-1@2x.svg" />
+          <img class="collaboraction-go-dark-alpha-2-9wWKr1" src="img/collaboraction-logo-dark-alpha-2@2x.svg" />
+        </div>
+        <div class="component-7-C61RwL">
+          <div class="topper-menu-4TO2uA">
+            <div class="menus-nNo0Bd">
+              <div class="home-VpjQnS roboto-medium-web-orange-11-9px">Home</div>
+              <div class="story-list-VpjQnS roboto-medium-web-orange-11-9px">Story List</div>
+              <div class="tag-list-VpjQnS roboto-medium-web-orange-11-9px">Tag List</div>
+            </div>
+            <div class="btn-nNo0Bd border-0-8px-web-orange">
+              <div class="collaboraction-LMyNeX poppins-semi-bold-web-orange-11-9px">Collaboraction</div>
+            </div>
+          </div>
+          <a href="screen-1.html#screen-1"><img class="ftswh-title-4TO2uA" src="img/fts-wh-title@2x.svg" /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,1 +1,53 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,500|Poppins:600">
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+
+    <body>
+        <div class="banner">
+            <img class="logo-img" src="img/fts-wh-title@2x.svg" alt="FTS Logo">
+            <ul>
+                <li><a href="#familytree">familytree</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#storylist">Story List</a></li>
+                <li><a href="#taglist">Tag List</a></li>
+                <li><a href="#collaboraction">Collaboraction</a></li>
+            </ul>
+        </div>
+        <div class="topnav">
+            <ul>
+                <li><a href="#animal">#ANIMAL</a></li>
+                <li><a href="#art">#ART</a></li>
+                <li><a href="#culture">#CULTURE</a></li>
+                <li><a href="#education">#EDUCATION</a></li>
+                <li><a href="#emotion">#EMOTION</a></li>
+                <li><a href="#event">#EVENT</a></li>
+                <li><a href="#family">#FAMILY</a></li>
+                <li><a href="#health">#HEALTH</a></li>
+                <li><a href="#history">#HISTORY</a></li>
+                <li><a href="#job">#JOB</a></li>
+                <li><a href="#event">#EVENT</a></li>
+                <li><a href="#person">#PERSON</a></li>
+            </ul>
+        </div>
+        <div id='map' style='width: 400px; height: 300px;'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiZ2Fpc3NlcnQiLCJhIjoiY2ttY3NpaTA0MmVwODJvbzRiMjA0cWRpaCJ9.7ZtAvTm6SxPlw8wT9aEPHw';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/gaissert/ckmctli4h3v2g17n735fd4vd8'
+            });
+        </script>
+        <div class="botnav">
+            <img src="img/collaboraction-logo-dark-alpha-2@2x.svg" alt="Collboraction">
+        </div>
+    </body>
+
+</html>

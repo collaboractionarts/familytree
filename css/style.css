@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    background-color: black;
+}
+
+.banner{
+    width: 100%;
+    background-color: black;
+    overflow: auto;
+}
+
+.logo-img {
+    float: left;
+    position: relative;
+}
+
+.banner ul {
+    padding: 0;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+.banner li a {
+    padding: 12px;
+    color: #EF8235;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.topnav {
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+}
+
+.topnav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+.topnav li a {
+    float: none;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    width: 8.3%;
+}
+
+.topnav li a:hover {
+    color: gray;
+}
+
+.botnav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    overflow: hidden;
+    float:none;
+}
+
+@media screen and (max-width: 500px) {
+    .topnav a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}

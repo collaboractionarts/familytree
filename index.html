@@ -43,13 +43,26 @@
                     </ul>
                 </div>
             </div>
-            <div id='map' style='width: 400px; height: 300px;'></div>
+            <section class="content">
+                <div id='map'></div>
+            </section>
             <script>
                 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2Fpc3NlcnQiLCJhIjoiY2ttY3NpaTA0MmVwODJvbzRiMjA0cWRpaCJ9.7ZtAvTm6SxPlw8wT9aEPHw';
                 var map = new mapboxgl.Map({
-                    container: 'map',
-                    style: 'mapbox://styles/gaissert/ckmctli4h3v2g17n735fd4vd8'
+                    container: 'map', // container ID
+                    style: 'mapbox://styles/gaissert/ckms06zdd2ks317s418229ih5', // style URL
+                    zoom: 11.8,
+                    center: [-87.610, 41.873]
                 });
+                // disable map zoom when using scroll
+                map.scrollZoom.disable();
+                map.boxZoom.disable();
+                map.dragPan.disable();
+                map.dragRotate.disable();
+                map.keyboard.disable();
+                map.touchZoomRotate.disable();
+                map.touchPitch.disable();
+                map.doubleClickZoom.disable();
             </script>
             <div class="botbar">
                 <div class="collab-logo">

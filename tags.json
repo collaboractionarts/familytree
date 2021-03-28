@@ -1,0 +1,134 @@
+categories = [
+    {
+        "category": "Animal",
+        "tags": [
+            "Giant Tortoise", "Perch", "Black Bear"
+        ]
+    },
+    {
+        "category": "Art",
+        "tags": [
+            "Poetry", "Paint", "Writer", "Dancer", "Artist", "Storyteller",
+            "Beatbox", "Collaboraction", "Writing"
+        ]
+    },
+    {
+        "category": "Culture",
+        "tags": [
+            "Caribbean Flavor", "Music", "Food", "Harlem Accent", "Irish Catholic",
+            "Filipino", "Black", "Black Woman", "Light Skin", "Dark Skin", "Anti-Racist",
+            "Heritage", "Integration", "American", "Fair Skin", "Legacy", "Lakota", "Mexican",
+            "Native American", "Puerto Rican", "Tejanos", "Mescalaro Apache", "Diversity"
+        ]
+    },
+    {
+        "category": "Education",
+        "tags": [
+            "Public School", "U of C Law School", "Education", "College",
+            "Howard University", "U of C Lab School", "Fisk University",
+            "Education", "Morris College", "Boston University", "Oxford University",
+            "Wabash College", "Howard University", "Benedict College", "Emory University",
+            "University of Illinois", "St Joseph's Hospital", "University of Chicago",
+            "DePaul", "NYU", "SMU",
+            "Nixon Elementary", "Berkeley", "Harvard", "Stanford University", "University of Cambridge",
+            "Johns Hopkins", "Notre Dame", "Maryville Academy", "Learning"
+        ]
+    },
+    {
+        "category": "Emotion",
+        "tags": [
+            "Respect", "Grateful", "Pain", "Shame", "Blame", "Abandonment", "Forgiveness", "Respect", "Nervous Breakdown", "Kindess", "Respect"
+        ]
+    },
+    {
+        "category": "Family",
+        "tags": [
+            "Family Reunion", "Barbecue", "Children", "Crest", "Single Mom", "Only Child", "Divorce", "Heirlooms", "Photographs", "Photo Albums", "Family Bible", "Family", "Brother", "Daughters", "Mother", "Grandfather", "Father", "Grandmother", "Mother", "Grandmother", "Grandfather", "Grandchildren", "Brothers", "Blood Brothers", "Aunt", "Daughters", "Family Reunion", "Matriarch", "Sisters", "Daughter", "Mother", "Divorce", "Grandfather", "Aunt", "Father", "Mother", "Grandmother", "Brother", "Sister"
+        ]
+    },
+    {
+        "category": "Health",
+        "tags": [
+            "Heart Attack", "Tuberculosis"
+        ]
+    },
+    {
+        "category": "History",
+        "tags": [
+            "Civil War", "Emancipation", "World War Two", "Civil Rights Movement",
+            "Partition of India", "Chicago Fire", "Muslim Genocide", "Korean War",
+            "The Middle Passage", "Civil War", "Korean War", "Great Depression",
+            "Slavery", "Apartheid", "Segregation", "South East Asian Exodus"
+        ]
+    },
+    {
+        "category": "Job",
+        "tags": [
+            "Actor", "Real Estate", "Police Officer", "Astronaut", "Dancer", "Marines", "Mother", "Writer", "Producer", "Narrator", "Bar", "Tavern", "Police Officer", "Teacher", "Muler", "Social Justice Activist", "Preacher", "Teacher", "Sharecropper", "Doctor", "Wagon Maker", "Nurse", "Musician", "Finance", "Construction", "American Medical Association", "Educator", "Playwright", "Director", "Attorney", "Probation Officer", "Broadcaster", "Engineer", "Business Man", "Contractor", "Engineer", "Journalist", "Florist", "Draftsperson", "Journalist", "Engineer", "University of Chicago", "MIT", "Boston College", "Teaching"
+        ]
+    },
+    {
+        "category": "Language",
+        "tags": [
+            "Tagalog", "Swahili"
+        ]
+    },
+    {
+        "category": "Object",
+        "tags": [
+            "Suitcase"
+        ]
+    },
+    {
+        "category": "Person",
+        "tags": [
+            "Judith Jamison", "Alvin Ailey", "Harold Washington", "Donald Trump", "King of Sweden", "Martin Luther King Jr", "Idi Amin", "W. E. B. Du Bois"
+        ]
+    },
+    {
+        "category": "Place",
+        "tags": [
+            "West Indies", "Harlem", "Buffalo", "Jenkinsville SC", "Detroit",
+            "Morristown NJ", "Northern New Jersey", "Ireland", "County Claire",
+            "Palos Hills", "Englewood", "South Side of Chicago",
+            "Lincoln Park", "Dayton OH", "Downer's Grove", "Mexico", "United States",
+            "Chicago", "Nashville", "Luzon, Philippines", "Texas",
+            "Illinois", "Detroit", "Asheville NC", "Cherokee Hills SC",
+            "Atlanta", "Anderson SC", "Crawfordsville, IN", "America", "Diaspora",
+            "Middle East", "England", "New York", "Antwerp", "Poland", "Europe",
+            "Krakow", "Mielec, Poland", "Holland", "Zasow, Poland",
+            "Newark NJ", "Pakistan", "Old Irving Park", "Karachi",
+            "Munich", "Rebdorf, Germany", "Los Angeles", "Wrigley Field",
+            "South America", "New York", "Dhoraji, India", "Burma", "Myanmar",
+            "Rangoon", "India", "East Africa", "Uganda", "Mombasa, Kenya",
+            "Iowa", "Ireland", "Midwest", "Sweden", "Minnesota",
+            "Winston-Salem NC", "Mississippi", "Kentucky", "Colombia", "Bogota",
+            "South Florida", "Charleston SC", "California", "Richmond Heights",
+            "Texas", "Midway Island", "Beirut Lebanon", "New York City", "Dallas, TX",
+            "Arlington TX", "Houston TX", "Baltimore", "South Africa",
+            "Chinatown", "Mauritius", "China", "Copenhagen", "Guangzhou, China",
+            "Palo Alto", "Hawaii", "San Francisco CA", "London", "Australia",
+            "Boston", "Norway", "Hartford CT", "South Bend IN",
+            "Denmark", "Massachusetts", "Farm", "Playboy Club", "Prison", "Police Department",
+            "St. Paul Baptist Church", "Postal Service", "Hudson Department Store"
+        ]
+    },
+    {
+        "category": "Television",
+        "tags": [
+            "Good Times"
+        ]
+    },
+    {
+        "category": "Travel",
+        "tags": [
+            "Boat", "Visa", "Tramp Freighter", "Airport"
+        ]
+    },
+    {
+        "category": "Violence",
+        "tags": [
+            "Child Abuse", "Rape", "Abuse", "Violence"
+        ]
+    }
+]

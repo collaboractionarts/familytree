@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="stories.json"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,500|Poppins:600">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="topbar">
+                <div class="topnav">
+                    <img class="topnav-logo" src="img/fts-wh-title@2x.svg" alt="FTS Logo">
+                    <div class="topnav-links">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#storylist">Story List</a></li>
+                            <li><a href="#taglist">Tag List</a></li>
+                            <li><a class="collaboraction-button" href="#collaboraction">Collaboraction</a></li>
+                        </ul>
+                    </div>
+                    <ul>
+                </div>
+                <div class="tagbar">
+                    <ul>
+                        <li><a href="#animal">#ANIMAL</a></li>
+                        <li><a href="#art">#ART</a></li>
+                        <li><a href="#culture">#CULTURE</a></li>
+                        <li><a href="#education">#EDUCATION</a></li>
+                        <li><a href="#emotion">#EMOTION</a></li>
+                        <li><a href="#event">#EVENT</a></li>
+                        <li><a href="#family">#FAMILY</a></li>
+                        <li><a href="#health">#HEALTH</a></li>
+                        <li><a href="#history">#HISTORY</a></li>
+                        <li><a href="#job">#JOB</a></li>
+                        <li><a href="#event">#EVENT</a></li>
+                        <li><a href="#person">#PERSON</a></li>
+                    </ul>
+                </div>
+            </div>
+            <section class="content">
+            </section>
+            <div class="botbar">
+                <div class="collab-logo">
+                    <a href="https://www.collaboraction.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/collaboraction-logo-dark-alpha-2@2x.svg" alt="Collaboraction.org">
+                    </a>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/collaboraction" target="_blank" rel="noopener noreferrer">
+                                <img src="img/e0678ef25486466ba65ef6ad47b559e1-1@2x.svg" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/collaboraction/" target="_blank" rel="noopener noreferrer">
+                                <img src="img/da7ef6dd1302486c9a67baebe4b364bc-1@2x.svg" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/collaboraction" target="_blank" rel="noopener noreferrer">
+                                <img src="img/c4392d634a0148fda8b7b2b0ad98293b-1@2x.svg" alt="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://youtube.com/collaboraction" target="_blank" rel="noopener noreferrer">
+                                <img src="img/e9bb463a1bc4434c9d33b81b1fe937f5-1@2x.svg" alt="YouTube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var w = document.querySelector("#width"),
+                h = document.querySelector("#height"),
+                c = document.querySelector("#calls"),
+                timeout = false, // holder for timeout id
+                delay = 250, // delay after event is "complete" to run callback
+                calls = 0;
+
+            // window.resize callback function
+            function getDimensions() {
+                w.innerHTML = window.innerWidth;
+                h.innerHTML = window.innerHeight;
+                calls += 1;
+                c.innerHTML = calls;
+            }
+
+            // window.resize event listener
+            window.addEventListener('resize', function() {
+                // clear the timeout
+                clearTimeout(timeout);
+                // start timing for event "completion"
+                timeout = setTimeout(getDimensions, delay);
+            });
+
+            getDimensions();
+        </script>
+    </body>
+
+</html>

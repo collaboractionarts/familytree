@@ -4,6 +4,8 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="stories.json"></script>
         <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
         <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
@@ -16,7 +18,9 @@
         <div id="wrapper">
             <div id="topbar">
                 <div class="topnav">
-                    <img class="topnav-logo" src="img/fts-wh-title@2x.svg" alt="FTS Logo">
+                    <div class="topnav-logo-container">
+                        <img class="topnav-logo" src="img/fts-wh-title@2x.svg" alt="FTS Logo">
+                    </div>
                     <div class="topnav-links">
                         <ul>
                             <li><a href="#home">Home</a></li>
@@ -29,18 +33,18 @@
                 </div>
                 <div class="tagbar">
                     <ul>
-                        <li><a href="#animal">#ANIMAL</a></li>
-                        <li><a href="#art">#ART</a></li>
-                        <li><a href="#culture">#CULTURE</a></li>
-                        <li><a href="#education">#EDUCATION</a></li>
-                        <li><a href="#emotion">#EMOTION</a></li>
-                        <li><a href="#event">#EVENT</a></li>
-                        <li><a href="#family">#FAMILY</a></li>
-                        <li><a href="#health">#HEALTH</a></li>
-                        <li><a href="#history">#HISTORY</a></li>
-                        <li><a href="#job">#JOB</a></li>
-                        <li><a href="#event">#EVENT</a></li>
-                        <li><a href="#person">#PERSON</a></li>
+                        <li><a href="#ANIMAL">#ANIMAL</a></li>
+                        <li><a href="#ART">#ART</a></li>
+                        <li><a href="#CULTURE">#CULTURE</a></li>
+                        <li><a href="#EDUCATION">#EDUCATION</a></li>
+                        <li><a href="#EMOTION">#EMOTION</a></li>
+                        <li><a href="#EVENT">#EVENT</a></li>
+                        <li><a href="#FAMILY">#FAMILY</a></li>
+                        <li><a href="#HEALTH">#HEALTH</a></li>
+                        <li><a href="#HISTORY">#HISTORY</a></li>
+                        <li><a href="#JOB">#JOB</a></li>
+                        <li><a href="#PERSON">#PERSON</a></li>
+                        <li><a href="#PLACE">#PLACE</a></li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +57,7 @@
                 var map = new mapboxgl.Map({
                     container: 'map', // container ID
                     style: 'mapbox://styles/gaissert/ckms06zdd2ks317s418229ih5', // style URL
-                    zoom: 11.8,
+                    zoom: 10,
                     center: [-87.610, 41.873]
                 });
 
@@ -66,168 +70,9 @@
                 map.touchPitch.disable();
                 map.doubleClickZoom.disable();
 
+
                 map.on('style.load', function() {
-                    var geojson = {
-                        'type': 'FeatureCollection',
-                        'features': [{
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-87.645, 41.882]
-                                },
-                                'properties': {
-                                    'id': 'aria',
-                                    'title': 'Aria Mallare',
-                                    'description': '<h3>Aria Mallare</h3>'
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-87.630, 41.880]
-                                },
-                                'properties': {
-                                    'id': 'jamil',
-                                    'title': 'Jamil Khoury',
-                                    'description': '<h3>Jamil Khoury</h3>'
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-87.705, 41.946]
-                                },
-                                'properties': {
-                                    'id': 'sean',
-                                    'title': 'Sean Patrick Leonard',
-                                    'description': '<h3>Sean Patrick Leonard</h3>'
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'id': 4,
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-87.789, 41.894]
-                                },
-                                'properties': {
-                                    'id': 'dana',
-                                    'title': 'Dana Anderson',
-                                    'description': '<h3>Dana Anderson</h3>'
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-87.556, 41.720]
-                                },
-                                'properties': {
-                                    'id': 'loretta',
-                                    'title': 'Loretta "Firekeeper" Hawkins',
-                                    'description': '<h3>Loretta "Firekeeper" Hawkins</h3>'
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-88.178, 42.409]
-                                },
-                                'properties': {
-                                    'id': 'gregory',
-                                    'title': 'Gregory Qaiyum, (aka GQ)',
-                                    'description': '<h3>Gregory Qaiyum, (aka GQ)</h3>'
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-87.789, 41.874]
-                                },
-                                'properties': {
-                                    'id': 'sandra',
-                                    'title': 'Sandra Delgado',
-                                    'description': '<h3>Sandra Delgado</h3>'
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-87.687, 41.812]
-                                },
-                                'properties': {
-                                    'id': 'priya',
-                                    'title': 'Priya Shah',
-                                    'description': '<h3>Priya Shah</h3>'
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-87.801, 42.705]
-                                },
-                                'properties': {
-                                    'id': 'sammy',
-                                    'title': 'Sammy Rangel',
-                                    'description': '<h3>Sammy Rangel</h3>'
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-87.602, 41.802]
-                                },
-                                'properties': {
-                                    'id': 'finley',
-                                    'title': 'Finley C. Campbell',
-                                    'description': '<h3>Finley C. Campbell</h3>'
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-87.663, 41.953]
-                                },
-                                'properties': {
-                                    'id': 'elizabeth',
-                                    'title': 'Elizabeth Laidlaw',
-                                    'description': '<h3>Elizabeth Laidlaw</h3>'
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-87.669, 41.777]
-                                },
-                                'properties': {
-                                    'id': 'jasmine',
-                                    'title': 'Jasmine Robinson',
-                                    'description': '<h3>Jasmine Robinson</h3>'
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-87.669, 42.010]
-                                },
-                                'properties': {
-                                    'id': 'tommy',
-                                    'title': 'Tommy Carroll',
-                                    'description': '<h3>Tommy Carroll</h3>'
-                                }
-                            }
-                        ]
-                    };
+                    var geojson = data;
                     var popup = null;
                     var openPopup = null;
                     geojson.features.forEach(function(marker) {
@@ -254,23 +99,33 @@
                                 map.setPaintProperty(marker.properties.id, 'circle-radius', 26);
 
                                 var coordinates = e.features[0].geometry.coordinates.slice();
-                                var description = e.features[0].properties.description;
+                                var name = e.features[0].properties.name;
+                                var categories = e.features[0].properties.categories.replace(/[\[\]']+/g, '');
+
+                                categories = categories.split(",");
+                                categories.forEach(function(element, index, array) {
+                                    element = "#" + element.slice(1, -1).toUpperCase();
+                                    array[index] = "<a href=\"" + element + "\">" + element + "</a>";
+                                });
+
+                                categories = categories.sort().join(', ');
 
                                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                                 }
-
                                 openPopup = marker.properties.id;
+
                                 popup = new mapboxgl.Popup();
-                                popup.setLngLat(coordinates).setHTML(description).addTo(map);
+                                var content = "<div class=\"story-container\"><div>Story: " + name + "</div>" +
+                                    "<div>Location: " + "</div>" +
+                                    "<div>Tags: " + categories + "</div></div><div class=\"watch-button-container\"><a class=\"watch-button\" href=\"#watch\">Watch</a></div>";
+                                popup.setLngLat(coordinates).setHTML(content).addTo(map);
                                 popup.on('close', function(e) {
                                     map.setPaintProperty(marker.properties.id, 'circle-radius', 12);
                                     popup = null;
                                     openPopup = null;
                                 });
                             }
-
-
                         });
 
                         map.on('mouseenter', marker.properties.id, function() {

@@ -1,0 +1,313 @@
+data = {
+    "type": "FeatureCollection",
+    "features": [{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.645, 41.882]
+            },
+            "properties": {
+                "id": "aria",
+                "name": "Aria Mallare",
+                "description": "<h3>Aria Mallare</h3>",
+                "tags": [
+                    "Suitcase", "Heirlooms", "Photographs", "Photo Albums", "Nashville",
+                    "Slavery", "Dark Skin", "Fair Skin", "Family Bible", "Education",
+                    "College", "Civil War", "Emancipation", "Black Woman", "Legacy",
+                    "Passing", "Fisk University", "Integration", "Chicago", "U of C Lab School",
+                    "Howard University", "Mexico", "Teacher", "U of C Law School",
+                    "Luzon, Philippines", "Farm", "Visa", "Opportunity", "United States",
+                    "Tagalog", "Airport", "Sunrise", "Chicago", "American", "Heritage",
+                    "Quarantine", "Filipino", "Black", "Arnis", "Writing"
+                ],
+                "categories": [
+                    "Place", "Education", "History", "Object", "Family", "Language", "Culture"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.630, 41.880]
+            },
+            "properties": {
+                "id": "jamil",
+                "name": "Jamil Khoury",
+                "description": "<h3>Jamil Khoury</h3>",
+                "tags": [],
+                "categories": []
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.705, 41.946]
+            },
+            "properties": {
+                "id": "sean",
+                "name": "Sean Patrick Leonard",
+                "description": "<h3>Sean Patrick Leonard</h3>",
+                "tags": [
+                    "Ireland", "County Claire", "Chicago", "Englewood", "Palos Hills",
+                    "Police Officer", "Irish Catholic", "South Side of Chicago",
+                    "Maryville Academy", "Nuns", "Nervous Breakdown", "Playboy Club",
+                    "Lincoln Park", "The Four Torches", "Downer's Grove", "Dayton OH",
+                    "Divorce", "Germany", "The Dragoons", "Sword", "Tatoo", "Crest",
+                    "Griffin", "Pain", "Shame", "Blame", "Only Child", "Single Mom",
+                    "Harold Washington", "Heart Attack", "Anti-Racist", "Public School",
+                    "Gang", "Collaboraction", "Children", "Teaching", "Learning",
+                    "Donald Trump", "Grateful"
+                ],
+                "categories": [
+                    "Place", "Person", "Culture", "Education", "Job", "Health", "Art"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 4,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.789, 41.894]
+            },
+            "properties": {
+                "id": "dana",
+                "name": "Dana Anderson",
+                "description": "<h3>Dana Anderson</h3>",
+                "tags": [
+                    "West Indies", "Boat", "Music", "Food", "Caribbean Flavor",
+                    "New York", "Harlem", "Harlem Accent", "Family Reunion", "Slavery",
+                    "Light Skin", "Dark Skin", "Bar", "Tavern", "Morristown NJ",
+                    "Detroit", "Northern New Jersey", "Buffalo", "Astronaut",
+                    "Good Times", "Barbecue", "Real Estate", "Jenkinsville SC",
+                    "Police Officer", "Marines", "Storyteller", "Artist", "Paint",
+                    "Writer", "Dancer", "Judith Jamison", "Alvin Ailey", "Mother",
+                    "Dancer", "Actor", "Narrator", "Writer", "Producer", "Poetry",
+                    "Beatbox", "Respect"
+                ],
+                "categories": [
+                    "Job", "Art", "Person", "Travel", "Place", "Culture", "Family", "Television", "Emotion"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.556, 41.720]
+            },
+            "properties": {
+                "id": "loretta",
+                "name": "Loretta 'Firekeeper' Hawkins",
+                "description": "<h3>Loretta 'Firekeeper' Hawkins</h3>",
+                "tags": [
+                    "Fairy Tale", "Brothers", "Slavery", "Plantation", "Slave Owner",
+                    "Civil War", "Emancipation", "Names", "Slave Name", "Blood Brothers",
+                    "Kentucky", "Winston-Salem NC", "Soldier", "Minister", "Family Reunion",
+                    "Probation Officer", "Glock", "Playwright", "Director", "Attorney",
+                    "Daughters", "Grandchildren", "Racism", "Oppression", "Segregation",
+                    "Discrimination", "Injustice", "Greyhound Bus", "Mississippi", "Aunt",
+                    "Camel Cigarettes", "The Middle Passage", "The Black Codes", "Lynching ",
+                    "Jim Crow", "Welfare", "Drugs", "Systemic Racism", "Educator", "Kindness", "Respect"
+                ],
+                "categories": [
+                    "Family", "Job", "Place", "History", "Emotion"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-88.178, 42.409]
+            },
+            "properties": {
+                "id": "gregory",
+                "name": "Gregory Qaiyum, (aka GQ)",
+                "description": "<h3>Gregory Qaiyum, (aka GQ)</h3>",
+                "tags": [
+                    "Mother", "Chicago", "Father", "Rebdorf, Germany", "Grandfather",
+                    "Munich", "Wagon Maker", "South America", "Grandmother",
+                    "Chicago Fire", "Wrigley Field", "Old Irving Park", "Dhoraji, India",
+                    "Burma", "Myanmar", "Muslim Genocide", "Rangoon", "Partition of India",
+                    "Sikhs", "Hindus", "Muslims", "Pakistan", "Karachi", "United States",
+                    "Nurse", "University of Chicago", "St Joseph's Hospital",
+                    "University of Illinois", "Pharmacy", "Military", "Catholic",
+                    "Merz Apothecary", "New York", "Los Angeles", "Segregation"
+                ],
+                "categories": [
+                    "Place", "Education", "Family", "Job", "History"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.789, 41.874]
+            },
+            "properties": {
+                "id": "sandra",
+                "name": "Sandra Delgado",
+                "description": "<h3>Sandra Delgado</h3>",
+                "tags": [],
+                "categories": []
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.687, 41.812]
+            },
+            "properties": {
+                "id": "priya",
+                "name": "Priya Shah",
+                "description": "<h3>Priya Shah</h3>",
+                "tags": [
+                    "India", "Mother", "Grandfather", "Uganda", "British Railway",
+                    "East Africa", "Grandmother", "Swahili", "Idi Amin",
+                    "South East Asian Exodus", "Mombasa, Kenya", "Refugees",
+                    "United States", "Chicago", "Indian Independence", "Pakistan",
+                    "Discrimination", "Colonization", "Trauma", "Struggle", "Oppression", "Storytelling"
+                ],
+                "categories": [
+                    "Place", "History", "Family", "Person", "Language"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.801, 42.705]
+            },
+            "properties": {
+                "id": "sammy",
+                "name": "Sammy Rangel",
+                "description": "<h3>Sammy Rangel</h3>",
+                "tags": [
+                    "Mexican", "Texas", "Tejanos", "Mescalaro Apache", "Military",
+                    "Abuse", "Giant Tortoise", "Fishing", "Perch", "Violence",
+                    "Substance Abuse", "Prison", "Illinois", "Chicago", "Child Abuse",
+                    "Racism", "Segregation", "Native American", "Puerto Rican",
+                    "Race Riots", "Heritage", "Lakota", "Black Bear", "Helper",
+                    "Abandonment", "Forgiveness", "Redemption", "Family", "Brother", "Daughters"
+                ],
+                "categories": [
+                    "Family", "Place", "Animal", "Emotion", "Violence"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.602, 41.802]
+            },
+            "properties": {
+                "id": "finley",
+                "name": "Finley C. Campbell",
+                "description": "<h3>Finley C. Campbell</h3>",
+                "tags": [
+                    "White Supremacy", "Cherokee", "Slavery", "Cherokee Hills SC",
+                    "Concubine", "Jubilee", "Irish", "Lynching", "Land", "Asheville NC",
+                    "Teacher", "Social Justice Activist", "Talented Tenth", "Noblesse Oblige",
+                    "Anderson SC", "Segregation", "County Fair", "Detroit", "Messiah (?)",
+                    "Mikado (?)", "Sharecropper", "Muler", "Preacher", "Landholder",
+                    "Morris College", "Benedict College", "Howard University",
+                    "St. Paul Baptist Church", "Democratic Party", "Education ",
+                    "Transformation", "Growth", "Segregation", "Desegregation",
+                    "Hudson Department Store", "Michigan Council of Churches",
+                    "Housing", "Ghetto Barrier", "Postal Service", "Radio Free Europe",
+                    "Atlanta", "Boston University", "Oxford University", "Police Department",
+                    "Detroit Street Railway", "Wabash College", "Crawfordsville, IN",
+                    "Emory University", "W. E. B. Du Bois", "Social Service", "Class Prejudice",
+                    "Multiracial Unitarian Universalism", "Neo-Racism", "Inclusion", "Diversity", "Equity"
+                ],
+                "categories": [
+                    "Job", "Place", "Education", "History"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.663, 41.953]
+            },
+            "properties": {
+                "id": "elizabeth",
+                "name": "Elizabeth Laidlaw",
+                "description": "<h3>Elizabeth Laidlaw</h3>",
+                "tags": [],
+                "categories": []
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.669, 41.777]
+            },
+            "properties": {
+                "id": "jasmine",
+                "name": "Jasmine Robinson",
+                "description": "<h3>Jasmine Robinson</h3>",
+                "tags": [
+                    "Colombia", "Bogota", "Engineer", "Radio Station", "Broadcaster",
+                    "Guerillas", "United States", "Slavery", "Charleston SC", "Matriarch",
+                    "South Florida", "Migration", "Sharecroppers", "Business Man", "Agriculture",
+                    "Korean War", "Richmond Heights", "Home Owners", "Power", "California",
+                    "Multi-Racial", "Passing", "Afro-Latina", "Privilege", "Power", "Community",
+                    "Advocates", "Allies"
+                ],
+                "categories": [
+                    "Place", "Job", "Family", "History"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.669, 42.010]
+            },
+            "properties": {
+                "id": "tommy",
+                "name": "Tommy Carroll",
+                "description": "<h3>Tommy Carroll</h3>",
+                "tags": [
+                    "Iowa", "Farming", "Germany", "Americana", "One-Room Schoolhouse",
+                     "Baseball", "Chicago", "Accounting", "Midwest", "Ireland",
+                     "Irish Catholic", "Germany", "Sweden", "Minnesota",
+                     "American Medical Association", "Korean War", "Veteran",
+                      "White Privilege", "Vacation", "Construction", "Finance", "Musician"
+                ],
+                "categories": [
+                    "Job", "Place", "History"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.705, 41.946]
+            },
+            "properties": {
+                "id": "jacqueline",
+                "name": "Jacqueline Russell",
+                "description": "<h3>Jacqueline Russell</h3>",
+                "tags": [
+                    "Texas", "Log Cabin", "Contractor", "Dallas TX", "Great Depression", "Tuberculosis", "Sanatorium", "Orphanage", "Adoption", "Grandfather", "Foster Homes", "Mother", "Aunt", "Journalist", "Coffee Shop", "Arlington TX", "Marine", "Midway Island", "GI Bill", "Engineer", "SMU", "Sisters", "Beirut Lebanon", "Arabic", "French", "Housekeeper", "Houston TX", "Theatre", "Divorce", "New York City", "Broadway", "NYU", "Boating Accident", "Chicago", "DePaul", "Old Town School of Folk Music", "Lookingglass Theatre", "Chicago Children's Theatre", "Daughter"
+                ],
+                "categories": [
+                    "Place", "Education", "Family", "History", "Health", "Job",
+                ]
+            }
+        }
+    ]
+};

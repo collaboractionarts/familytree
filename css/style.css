@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto";
+    -webkit-font-smoothing: antialiased;
     background-color: black;
 }
 
@@ -93,6 +94,10 @@ body {
 
 /* MAP */
 
+*:focus {
+    outline: none;
+}
+
 .content {
     position: fixed;
     top: 130px;
@@ -117,6 +122,46 @@ body {
 
 .mapbox-improve-map {
     display: none;
+}
+
+.marker {
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* .mapboxgl-popup {
+    max-width: 200px;
+} */
+
+.mapboxgl-popup{
+    transform:none !important;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+}
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-center .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip{
+    display:none !important;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    height: 282px;
+    border: 5px solid #FFA800;
+    border-radius: 15px;
+    background-color: black;
+    width: 510px;
+    color: #FFA800;
 }
 
 /* BOTTOM BAR */

@@ -2,12 +2,14 @@
 <html lang="en" dir="ltr">
 
     <head>
-        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
-        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,500|Poppins:600">
-        <link rel="stylesheet" href="css/style.css">
         <meta charset="utf-8">
         <title></title>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,500|Poppins:600">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
@@ -48,13 +50,14 @@
             </section>
             <script>
                 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2Fpc3NlcnQiLCJhIjoiY2ttY3NpaTA0MmVwODJvbzRiMjA0cWRpaCJ9.7ZtAvTm6SxPlw8wT9aEPHw';
+
                 var map = new mapboxgl.Map({
                     container: 'map', // container ID
                     style: 'mapbox://styles/gaissert/ckms06zdd2ks317s418229ih5', // style URL
                     zoom: 11.8,
                     center: [-87.610, 41.873]
                 });
-                // disable map zoom when using scroll
+
                 map.scrollZoom.disable();
                 map.boxZoom.disable();
                 map.dragPan.disable();
@@ -63,6 +66,225 @@
                 map.touchZoomRotate.disable();
                 map.touchPitch.disable();
                 map.doubleClickZoom.disable();
+
+                map.on('style.load', function() {
+                    var geojson = {
+                        'type': 'FeatureCollection',
+                        'features': [{
+                                'type': 'Feature',
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.645, 41.882]
+                                },
+                                'properties': {
+                                    'id': 'aria',
+                                    'title': 'Aria Mallare',
+                                    'description': '<h3>Aria Mallare</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.630, 41.880]
+                                },
+                                'properties': {
+                                    'id': 'jamil',
+                                    'title': 'Jamil Khoury',
+                                    'description': '<h3>Jamil Khoury</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.705, 41.946]
+                                },
+                                'properties': {
+                                    'id': 'sean',
+                                    'title': 'Sean Patrick Leonard',
+                                    'description': '<h3>Sean Patrick Leonard</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 4,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.789, 41.894]
+                                },
+                                'properties': {
+                                    'id': 'dana',
+                                    'title': 'Dana Anderson',
+                                    'description': '<h3>Dana Anderson</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 5,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.556, 41.720]
+                                },
+                                'properties': {
+                                    'id': 'loretta',
+                                    'title': 'Loretta "Firekeeper" Hawkins',
+                                    'description': '<h3>Loretta "Firekeeper" Hawkins</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 6,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-88.178, 42.409]
+                                },
+                                'properties': {
+                                    'id': 'gregory',
+                                    'title': 'Gregory Qaiyum, (aka GQ)',
+                                    'description': '<h3>Gregory Qaiyum, (aka GQ)</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 7,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.789, 41.874]
+                                },
+                                'properties': {
+                                    'id': 'sandra',
+                                    'title': 'Sandra Delgado',
+                                    'description': '<h3>Sandra Delgado</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 8,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.687, 41.812]
+                                },
+                                'properties': {
+                                    'id': 'priya',
+                                    'title': 'Priya Shah',
+                                    'description': '<h3>Priya Shah</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 9,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.801, 42.705]
+                                },
+                                'properties': {
+                                    'id': 'sammy',
+                                    'title': 'Sammy Rangel',
+                                    'description': '<h3>Sammy Rangel</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 10,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.602, 41.802]
+                                },
+                                'properties': {
+                                    'id': 'finley',
+                                    'title': 'Finley C. Campbell',
+                                    'description': '<h3>Finley C. Campbell</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 11,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.663, 41.953]
+                                },
+                                'properties': {
+                                    'id': 'elizabeth',
+                                    'title': 'Elizabeth Laidlaw',
+                                    'description': '<h3>Elizabeth Laidlaw</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 12,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.669, 41.777]
+                                },
+                                'properties': {
+                                    'id': 'jasmine',
+                                    'title': 'Jasmine Robinson',
+                                    'description': '<h3>Jasmine Robinson</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 13,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.669, 42.010]
+                                },
+                                'properties': {
+                                    'id': 'tommy',
+                                    'title': 'Tommy Carroll',
+                                    'description': '<h3>Tommy Carroll</h3>'
+                                }
+                            }
+                        ]
+                    };
+                    geojson.features.forEach(function(marker) {
+                        map.addSource(marker.properties.id, {
+                            'type': 'geojson',
+                            'data': {
+                                'type': 'FeatureCollection',
+                                'features': [
+                                    marker
+                                ]
+                            }
+                        });
+                        map.addLayer({
+                            'id': marker.properties.id,
+                            'source': marker.properties.id,
+                            'type': 'circle',
+                            'paint': {
+                                'circle-radius': 12,
+                                'circle-color': "#FFA800"
+                            }
+                        });
+                        map.on('click', marker.properties.id, function(e) {
+                            map.setPaintProperty(marker.properties.id, 'circle-radius', 26);
+
+                            var coordinates = e.features[0].geometry.coordinates.slice();
+                            var description = e.features[0].properties.description;
+
+                            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                            }
+
+                            var popup = new mapboxgl.Popup();
+                            popup.setLngLat(coordinates).setHTML(description).addTo(map);
+                            popup.on('close', function(e) {
+                                map.setPaintProperty(marker.properties.id, 'circle-radius', 12);
+                            });
+
+                        });
+
+                        map.on('mouseenter', marker.properties.id, function() {
+                            map.getCanvas().style.cursor = 'pointer';
+                        });
+
+                        map.on('mouseleave', marker.properties.id, function() {
+                            map.getCanvas().style.cursor = '';
+                        });
+                    });
+
+                });
             </script>
             <div class="botbar">
                 <div class="collab-logo">
@@ -121,9 +343,6 @@
             });
 
             getDimensions();
-
-
-            Resources
         </script>
     </body>
 

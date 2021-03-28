@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            map.on('load', function() {
+                map.addSource('markers', {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'FeatureCollection',
+                        'features': [{
+                                'type': 'Feature',
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.645, 41.882]
+                                },
+                                'properties': {
+                                    'id': 1,
+                                    'title': 'Mapbox',
+                                    'description': '<h3>Aria Mallare</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.630, 41.880]
+                                },
+                                'properties': {
+                                    'id': 2,
+                                    'title': 'Mapbox',
+                                    'description': '<h3>Jamil Khoury</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.705, 41.946]
+                                },
+                                'properties': {
+                                    'title': 'Mapbox',
+                                    'id': 3,
+                                    'description': '<h3>Sean Patrick Leonard</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 4,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.789, 41.894]
+                                },
+                                'properties': {
+                                    'title': 'Mapbox',
+                                    'description': '<h3>Dana Anderson</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 5,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.556, 41.720]
+                                },
+                                'properties': {
+                                    'title': 'Mapbox',
+                                    'description': '<h3>Loretta "Firekeeper" Hawkins</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 6,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-88.178, 42.409]
+                                },
+                                'properties': {
+                                    'title': 'Mapbox',
+                                    'description': '<h3>Gregory Qaiyum, (aka GQ)</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 7,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.789, 41.874]
+                                },
+                                'properties': {
+                                    'title': 'Mapbox',
+                                    'description': '<h3>Sandra Delgado</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 8,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.687, 41.812]
+                                },
+                                'properties': {
+                                    'title': 'Mapbox',
+                                    'description': '<h3>Priya Shah</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 9,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.801, 42.705]
+                                },
+                                'properties': {
+                                    'title': 'Mapbox',
+                                    'description': '<h3>Sammy Rangel</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 10,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.602, 41.802]
+                                },
+                                'properties': {
+                                    'title': 'Mapbox',
+                                    'description': '<h3>Finley C. Campbell</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 11,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.663, 41.953]
+                                },
+                                'properties': {
+                                    'title': 'Mapbox',
+                                    'description': '<h3>Elizabeth Laidlaw</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 12,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.669, 41.777]
+                                },
+                                'properties': {
+                                    'title': 'Mapbox',
+                                    'description': '<h3>Jasmine Robinson</h3>'
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'id': 13,
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-87.669, 42.010]
+                                },
+                                'properties': {
+                                    'title': 'Mapbox',
+                                    'description': '<h3>Tommy Carroll</h3>'
+                                }
+                            }
+                        ]
+                    }
+                });
+                map.addLayer({
+                    'id': 'markers',
+                    'source': 'markers',
+                    'type': 'circle',
+                    'paint': {
+                        'circle-radius': 12,
+                        'circle-color': "#FFA800"
+                    }
+                });
+
+                map.on('click', 'markers', function(e) {
+                    console.log(e.features[0]);
+                    map.setPaintProperty('markers', 'circle-radius', 26);
+
+                    var coordinates = e.features[0].geometry.coordinates.slice();
+                    var description = e.features[0].properties.description;
+
+                    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                    }
+
+                    var popup = new mapboxgl.Popup();
+                    popup.setLngLat(coordinates).setHTML(description).addTo(map);
+                    popup.on('close', function(e) {
+                        map.setPaintProperty('markers', 'circle-radius', 12);
+                    })
+
+                });
+
+                map.on('mouseenter', 'markers', function() {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+
+                map.on('mouseleave', 'markers', function() {
+                    map.getCanvas().style.cursor = '';
+                });
+            });
+
+            geojson.features.forEach(function(marker) {
+                // create an HTML element for each features
+                var el = document.createElement('div');
+                el.className = 'marker';
+                el.style.backgrounbackgroundImage = 'url("/img/ellipse-12@2x.svg")';
+                el.style.width = '50px';
+                el.style.height = '50px';
+                el.style.cursor = 'pointer';
+
+                // make a marker for each feature and add it to the map
+                new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).setPopup(
+                    new mapboxgl.Popup({
+                        offset: 25
+                    }).setHTML(
+                        '<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'
+                    )
+                ).addTo(map);
+            });
+        </script>
+    </body>
+
+</html>

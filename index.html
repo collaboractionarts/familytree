@@ -19,11 +19,10 @@
                     <img class="topnav-logo" src="img/fts-wh-title@2x.svg" alt="FTS Logo">
                     <div class="topnav-links">
                         <ul>
-                            <li><a href="#familytree">familytree</a></li>
                             <li><a href="#home">Home</a></li>
                             <li><a href="#storylist">Story List</a></li>
                             <li><a href="#taglist">Tag List</a></li>
-                            <li><a href="#collaboraction">Collaboraction</a></li>
+                            <li><a class="collaboraction-button" href="#collaboraction">Collaboraction</a></li>
                         </ul>
                     </div>
                     <ul>
@@ -121,7 +120,6 @@
                             },
                             {
                                 'type': 'Feature',
-                                'id': 5,
                                 'geometry': {
                                     'type': 'Point',
                                     'coordinates': [-87.556, 41.720]
@@ -134,7 +132,6 @@
                             },
                             {
                                 'type': 'Feature',
-                                'id': 6,
                                 'geometry': {
                                     'type': 'Point',
                                     'coordinates': [-88.178, 42.409]
@@ -147,7 +144,6 @@
                             },
                             {
                                 'type': 'Feature',
-                                'id': 7,
                                 'geometry': {
                                     'type': 'Point',
                                     'coordinates': [-87.789, 41.874]
@@ -160,7 +156,6 @@
                             },
                             {
                                 'type': 'Feature',
-                                'id': 8,
                                 'geometry': {
                                     'type': 'Point',
                                     'coordinates': [-87.687, 41.812]
@@ -173,7 +168,6 @@
                             },
                             {
                                 'type': 'Feature',
-                                'id': 9,
                                 'geometry': {
                                     'type': 'Point',
                                     'coordinates': [-87.801, 42.705]
@@ -186,7 +180,6 @@
                             },
                             {
                                 'type': 'Feature',
-                                'id': 10,
                                 'geometry': {
                                     'type': 'Point',
                                     'coordinates': [-87.602, 41.802]
@@ -199,7 +192,6 @@
                             },
                             {
                                 'type': 'Feature',
-                                'id': 11,
                                 'geometry': {
                                     'type': 'Point',
                                     'coordinates': [-87.663, 41.953]
@@ -212,7 +204,6 @@
                             },
                             {
                                 'type': 'Feature',
-                                'id': 12,
                                 'geometry': {
                                     'type': 'Point',
                                     'coordinates': [-87.669, 41.777]
@@ -225,7 +216,6 @@
                             },
                             {
                                 'type': 'Feature',
-                                'id': 13,
                                 'geometry': {
                                     'type': 'Point',
                                     'coordinates': [-87.669, 42.010]
@@ -238,6 +228,8 @@
                             }
                         ]
                     };
+                    var popup = null;
+                    var openPopup = null;
                     geojson.features.forEach(function(marker) {
                         map.addSource(marker.properties.id, {
                             'type': 'geojson',
@@ -258,20 +250,26 @@
                             }
                         });
                         map.on('click', marker.properties.id, function(e) {
-                            map.setPaintProperty(marker.properties.id, 'circle-radius', 26);
+                            if (popup === null || openPopup !== marker.properties.id) {
+                                map.setPaintProperty(marker.properties.id, 'circle-radius', 26);
 
-                            var coordinates = e.features[0].geometry.coordinates.slice();
-                            var description = e.features[0].properties.description;
+                                var coordinates = e.features[0].geometry.coordinates.slice();
+                                var description = e.features[0].properties.description;
 
-                            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-                                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                                }
+
+                                openPopup = marker.properties.id;
+                                popup = new mapboxgl.Popup();
+                                popup.setLngLat(coordinates).setHTML(description).addTo(map);
+                                popup.on('close', function(e) {
+                                    map.setPaintProperty(marker.properties.id, 'circle-radius', 12);
+                                    popup = null;
+                                    openPopup = null;
+                                });
                             }
 
-                            var popup = new mapboxgl.Popup();
-                            popup.setLngLat(coordinates).setHTML(description).addTo(map);
-                            popup.on('close', function(e) {
-                                map.setPaintProperty(marker.properties.id, 'circle-radius', 12);
-                            });
 
                         });
 

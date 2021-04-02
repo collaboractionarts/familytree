@@ -4,7 +4,7 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.645, 41.882]
+                "coordinates": [-87.665, 41.882]
             },
             "properties": {
                 "id": "aria",
@@ -96,12 +96,12 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.556, 41.720]
+                "coordinates": [-87.556, 41.730]
             },
             "properties": {
                 "id": "loretta",
                 "name": "Loretta 'Firekeeper' Hawkins",
-                "description": "<h3>Loretta 'Firekeeper' Hawkins</h3>",
+                "description": "<h3>Loretta \"Firekeeper\" Hawkins</h3>",
                 "tags": [
                     "Fairy Tale", "Brothers", "Slavery", "Plantation", "Slave Owner",
                     "Civil War", "Emancipation", "Names", "Slave Name", "Blood Brothers",
@@ -121,7 +121,7 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-88.178, 42.409]
+                "coordinates": [-87.884, 42.015]
             },
             "properties": {
                 "id": "gregory",
@@ -146,7 +146,7 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.789, 41.874]
+                "coordinates": [-87.795, 41.865]
             },
             "properties": {
                 "id": "sandra",
@@ -160,7 +160,7 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.687, 41.812]
+                "coordinates": [-87.690, 41.817]
             },
             "properties": {
                 "id": "priya",
@@ -273,7 +273,7 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.669, 42.010]
+                "coordinates": [-87.669, 42.000]
             },
             "properties": {
                 "id": "tommy",
@@ -295,7 +295,7 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.705, 41.946]
+                "coordinates": [-87.735, 41.958]
             },
             "properties": {
                 "id": "jacqueline",

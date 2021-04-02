@@ -161,15 +161,18 @@ body {
     cursor: pointer;
 }
 
-/* .mapboxgl-popup {
-    max-width: 200px;
-} */
-
 .mapboxgl-popup{
     transform:none !important;
-    position: absolute;
-    top: 10%;
-    left: 55%;
+    z-index: 1;
+    position: fixed;
+    padding-top: 130px;
+    padding-bottom: 120px;
+    top: 0;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    height: inherit;
+    max-width: 100%;
 }
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
@@ -180,19 +183,40 @@ body {
 .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip{
+    transform:none !important;
     display:none !important;
 }
 
+
+
+/*
+position: relative;
+background-color: black;
+margin: auto;
+padding: 0;
+border: 5px solid #FFA800;
+border-radius: 15px;
+width: 80%;
+height: 80%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s
+*/
 .mapboxgl-popup-content {
-    height: 282px;
-    width: 510px;
+    position: relative;
+    background-color: black;
     border: 5px solid #FFA800;
     border-radius: 15px;
-    background-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: auto;
+    padding: auto;
+    height: 282px;
+    width: 510px;
     font-family: "Roboto", "Helvetica";
     font-size: 24px;
     font-weight: 500;
-    left: 32px;
     color: #FFA800;
     line-height: 120%;
 }
@@ -296,4 +320,81 @@ body {
         width: 100%;
         text-align: left;
     }
+}
+
+/* MODAL */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: 0;
+  border: 5px solid #FFA800;
+  border-radius: 15px;
+  width: 80%;
+  height: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: none;
+  color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    font-family: "Roboto" "Helvetica"
+    color: #FFA800;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: none;
+  color: white;
 }

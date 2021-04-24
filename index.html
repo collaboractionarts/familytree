@@ -25,11 +25,17 @@
                         <ul>
                             <li><a href="#home">Home</a></li>
                             <li><a href="#storylist">Story List</a></li>
-                            <li><a href="#taglist">Tag List</a></li>
-                            <li><a class="collaboraction-button" href="#collaboraction">Collaboraction</a></li>
+                            <li><a href="#taglist">Share My Story</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a class="support-button" href="#support">Support</a></li>
                         </ul>
                     </div>
                     <ul>
+                </div>
+            </div>
+            <section class="content">
+                <div id="intro-img-container">
+                    <img class="intro-img" src="img/fts-1200x925-text-1@1x.png" alt="Family Tree Stories">
                 </div>
                 <div class="tagbar">
                     <ul>
@@ -47,19 +53,17 @@
                         <li><a href="#PLACE">#PLACE</a></li>
                     </ul>
                 </div>
-            </div>
-            <section class="content">
-                <div id="intro-img-container">
-                    <img class="intro-img" src="img/fts-1200x925-text-1@1x.png" alt="Family Tree Stories">
-                </div>
                 <div id='map'></div>
             </section>
             <script>
                 var fadeTimer = setTimeout("document.getElementById('intro-img-container').classList.toggle('fadeOut');", 20000);
                 var introImg = document.getElementById("intro-img-container");
-                introImg.addEventListener('click', function(event) {
+                var clickIntroImg = introImg.addEventListener('click', function(event) {
+                    introImg.removeEventListener('click', clickIntroImg);
                     introImg.classList.toggle("fadeOut");
                     clearTimeout(fadeTimer);
+                }, {
+                    once: true
                 });
 
                 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2Fpc3NlcnQiLCJhIjoiY2ttY3NpaTA0MmVwODJvbzRiMjA0cWRpaCJ9.7ZtAvTm6SxPlw8wT9aEPHw';
@@ -207,7 +211,7 @@
                         <img src="img/healing-illinois-logo.png" alt="Healing Illinois">
                     </a>
                     <a href="https://arts.illinois.gov/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/IAC+Logo.png" alt="Illinois Arts Council Agency">
+                        <img id="iac-logo" src="img/IAC+Logo.png" alt="Illinois Arts Council Agency">
                     </a>
                     <a href="https://mjmff.org/" target="_blank" rel="noopener noreferrer">
                         <img src="img/malnati-logo.png" alt="Marc & Jeanne Malnati Family Foundation">

@@ -19,7 +19,7 @@
             <div id="topbar">
                 <div class="topnav">
                     <div class="topnav-logo-container">
-                        <img class="topnav-logo" src="img/fts-wh-title@2x.svg" alt="FTS Logo">
+                        <img class="topnav-logo" src="img/fts-title-beta-white-1@2x.png" alt="FTS Logo">
                     </div>
                     <div class="topnav-links">
                         <ul>
@@ -49,15 +49,25 @@
                 </div>
             </div>
             <section class="content">
+                <div id="intro-img-container">
+                    <img class="intro-img" src="img/fts-1200x925-text-1@1x.png" alt="Family Tree Stories">
+                </div>
                 <div id='map'></div>
             </section>
             <script>
+                var fadeTimer = setTimeout("document.getElementById('intro-img-container').classList.toggle('fadeOut');", 20000);
+                var introImg = document.getElementById("intro-img-container");
+                introImg.addEventListener('click', function(event) {
+                    introImg.classList.toggle("fadeOut");
+                    clearTimeout(fadeTimer);
+                });
+
                 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2Fpc3NlcnQiLCJhIjoiY2ttY3NpaTA0MmVwODJvbzRiMjA0cWRpaCJ9.7ZtAvTm6SxPlw8wT9aEPHw';
 
                 var map = new mapboxgl.Map({
                     container: 'map', // container ID
                     style: 'mapbox://styles/gaissert/ckms06zdd2ks317s418229ih5', // style URL
-                    zoom: 10,
+                    zoom: 9.8,
                     center: [-87.610, 41.873]
                 });
 
@@ -171,79 +181,111 @@
                         </li>
                     </ul>
                 </div>
+                <div class="partners">
+                    <a href="https://www.arts.gov/grants/grants-for-arts-projects/program-description" target="_blank" rel="noopener noreferrer">
+                        <img src="img/nefta-logo.png" alt="National Endowment for the Arts">
+                    </a>
+                    <a href="https://www.chicago.gov/city/en/depts/dca.html" target="_blank" rel="noopener noreferrer">
+                        <img src="img/dcase-4c-logo-2011-1@2x.png" alt="Chicago DCASE">
+                    </a>
+                    <a href="https://www.ilhumanities.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/illinois-humanities-logo-1-1@2x.png" alt="Illinois Humanities">
+                    </a>
+                    <a href="https://www.cct.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/chicago-community-trust-logo.png" alt="The Chicago Community Trust And Affiliates">
+                    </a>
+                    <a>
+                        <img src="img/Feinberg.png" alt="Joseph & Bessie Feinberg Foundation">
+                    </a>
+                    <a href="https://avchicago.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/av-chicago-logo-lockup-stacked-color-lg-1@2x.png" alt="AV Chicago">
+                    </a>
+                    <a href="https://fylf.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/fylf-logo.png" alt="Find Your Light Foundation">
+                    </a>
+                    <a href="https://www.dhs.state.il.us/page.aspx?item=126286" target="_blank" rel="noopener noreferrer">
+                        <img src="img/healing-illinois-logo.png" alt="Healing Illinois">
+                    </a>
+                    <a href="https://arts.illinois.gov/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/IAC+Logo.png" alt="Illinois Arts Council Agency">
+                    </a>
+                    <a href="https://mjmff.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/malnati-logo.png" alt="Marc & Jeanne Malnati Family Foundation">
+                    </a>
+
+                </div>
             </div>
-        </div>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
 
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <h2>Modal Header</h2>
-                </div>
-                <div class="modal-body">
-                    <p>Some text in the Modal Body</p>
-                    <p>Some other text...</p>
-                </div>
-                <div class="modal-footer">
-                    <h3>Modal Footer</h3>
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Modal Header</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the Modal Body</p>
+                        <p>Some other text...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
 
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
 
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
 
-            // When the user clicks the button, open the modal
-            function openModal() {
-                modal.style.display = "block";
-            }
+                // When the user clicks the button, open the modal
+                function openModal() {
+                    modal.style.display = "block";
+                }
 
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
                     modal.style.display = "none";
                 }
-            }
-        </script>
-        <script type="text/javascript">
-            var w = document.querySelector("#width"),
-                h = document.querySelector("#height"),
-                c = document.querySelector("#calls"),
-                timeout = false, // holder for timeout id
-                delay = 250, // delay after event is "complete" to run callback
-                calls = 0;
 
-            // window.resize callback function
-            function getDimensions() {
-                w.innerHTML = window.innerWidth;
-                h.innerHTML = window.innerHeight;
-                calls += 1;
-                c.innerHTML = calls;
-            }
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+            <script type="text/javascript">
+                var w = document.querySelector("#width"),
+                    h = document.querySelector("#height"),
+                    c = document.querySelector("#calls"),
+                    timeout = false, // holder for timeout id
+                    delay = 250, // delay after event is "complete" to run callback
+                    calls = 0;
 
-            // window.resize event listener
-            window.addEventListener('resize', function() {
-                // clear the timeout
-                clearTimeout(timeout);
-                // start timing for event "completion"
-                timeout = setTimeout(getDimensions, delay);
-            });
+                // window.resize callback function
+                function getDimensions() {
+                    w.innerHTML = window.innerWidth;
+                    h.innerHTML = window.innerHeight;
+                    calls += 1;
+                    c.innerHTML = calls;
+                }
 
-            getDimensions();
-        </script>
+                // window.resize event listener
+                window.addEventListener('resize', function() {
+                    // clear the timeout
+                    clearTimeout(timeout);
+                    // start timing for event "completion"
+                    timeout = setTimeout(getDimensions, delay);
+                });
+
+                getDimensions();
+            </script>
     </body>
 
 </html>

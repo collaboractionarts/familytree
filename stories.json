@@ -4,7 +4,7 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.665, 41.882]
+                "coordinates": [-87.680, 41.882]
             },
             "properties": {
                 "id": "aria",
@@ -30,14 +30,24 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.630, 41.880]
+                "coordinates": [-87.630, 41.840]
             },
             "properties": {
                 "id": "jamil",
                 "name": "Jamil Khoury",
                 "description": "<h3>Jamil Khoury</h3>",
-                "tags": [],
-                "categories": [],
+                "tags": [
+                    "Arabic", "Mother", "Great Grandparents", "Chicago", "Slovakia",
+                    "Hungary", "Grocery Wholesale", "Grandfather", "Grandmother",
+                    "Poland", "Father", "Syria", "Engineering", "Ellis Island",
+                    "Pennsylvania", "Ohio", "Indiana", "Pakistan", "India", "Iran",
+                    "Lutheran", "Roman Catholic", "Eastern Orthodox", "Islam",
+                    "Judaism", "Colonialism", "Imperialism", "Racism", "Islamophobia",
+                    "Arab-Israeli Conflict", "Justice for Palestinians", "Silk Road Rising"
+                ],
+                "categories": [
+                    "Language", "Family", "Place", "Job", "Education", "Religion"
+                ],
                 "video": "https://www.youtube.com/embed/2pUL0FCnXYg"
             }
         },
@@ -104,7 +114,7 @@ data = {
             },
             "properties": {
                 "id": "loretta",
-                "name": "Loretta 'Firekeeper' Hawkins",
+                "name": "Loretta \\\'Firekeeper\\\' Hawkins",
                 "description": "<h3>Loretta \"Firekeeper\" Hawkins</h3>",
                 "tags": [
                     "Fairy Tale", "Brothers", "Slavery", "Plantation", "Slave Owner",
@@ -126,7 +136,7 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.884, 42.015]
+                "coordinates": [-87.854, 42.005]
             },
             "properties": {
                 "id": "gregory",
@@ -158,8 +168,16 @@ data = {
                 "id": "sandra",
                 "name": "Sandra Delgado",
                 "description": "<h3>Sandra Delgado</h3>",
-                "tags": [],
-                "categories": [],
+                "tags": [
+                    "Latin America", "Father", "Mother", "Colombia", "Only Child",
+                    "United States", "Bomb", "Violence", "Brother", "Europe",
+                    "Andalucia", "Spain", "Catholic Church", "Colonizer", "Mines",
+                    "Emerald Mines", "Ceramics", "Chicago", "Marriage By Proxy",
+                    "Earl Grey Tea", "Bergamot Leaves", "Violin", "Piano", "Princess Grace"
+                ],
+                "categories": [
+                    "Place", "Family", "Violence", "Person", "Art"
+                ],
                 "video": "https://www.youtube.com/embed/glIixL2y4as"
             }
         },
@@ -307,19 +325,106 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.735, 41.958]
+                "coordinates": [-87.740, 41.963]
             },
             "properties": {
                 "id": "jacqueline",
                 "name": "Jacqueline Russell",
                 "description": "<h3>Jacqueline Russell</h3>",
                 "tags": [
-                    "Texas", "Log Cabin", "Contractor", "Dallas TX", "Great Depression", "Tuberculosis", "Sanatorium", "Orphanage", "Adoption", "Grandfather", "Foster Homes", "Mother", "Aunt", "Journalist", "Coffee Shop", "Arlington TX", "Marine", "Midway Island", "GI Bill", "Engineer", "SMU", "Sisters", "Beirut Lebanon", "Arabic", "French", "Housekeeper", "Houston TX", "Theatre", "Divorce", "New York City", "Broadway", "NYU", "Boating Accident", "Chicago", "DePaul", "Old Town School of Folk Music", "Lookingglass Theatre", "Chicago Children's Theatre", "Daughter"
+                    "Texas", "Log Cabin", "Contractor", "Dallas TX", "Great Depression",
+                    "Tuberculosis", "Sanatorium", "Orphanage", "Adoption", "Grandfather",
+                    "Foster Homes", "Mother", "Aunt", "Journalist", "Coffee Shop",
+                    "Arlington TX", "Marine", "Midway Island", "GI Bill", "Engineer",
+                    "SMU", "Sisters", "Beirut Lebanon", "Arabic", "French", "Housekeeper",
+                    "Houston TX", "Theatre", "Divorce", "New York City", "Broadway", "NYU",
+                    "Boating Accident", "Chicago", "DePaul", "Old Town School of Folk Music",
+                    "Lookingglass Theatre", "Chicago Children's Theatre", "Daughter"
                 ],
                 "categories": [
                     "Place", "Education", "Family", "History", "Health", "Job",
                 ],
                 "video": "https://www.youtube.com/embed/l4pZrTZOvYM"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.750, 41.930]
+            },
+            "properties": {
+                "id": "david",
+                "name": "Dr. David Ansell",
+                "description": "<h3>Dr. David Ansell</h3>",
+                "tags": [
+                    "Diaspora", "Middle East", "Europe", "King of Sweden", "Poland",
+                    "World War II", "England", "Mielec, Poland", "Krakow", "Jews",
+                    "Merchants", "Millers", "Polish Catholics", "Pogrom", "Rape",
+                    "Zasow, Poland", "Polish Army", "AWOL", "Antwerp", "Freedom",
+                    "Holland", "Boats", "Names", "Nazis", "Royal Air Force", "Newark, NJ",
+                    "Tramp Freighter", "America", "New York", "Holocaust", "Assigned White",
+                    "Civil Rights Movement", "Martin Luther King Jr.", "Doctor",
+                    "Cook County Hospital", "Chicago", "Racism", "Economic Depravation",
+                    "Oppression"
+                ],
+                "categories": [
+                    "Place", "Person", "Violence", "Travel", "History", "Culture"
+                ],
+                "video": "https://www.youtube.com/embed/okFQ9DORxjc"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.635, 41.889]
+            },
+            "properties": {
+                "id": "arica",
+                "name": "Arica Hilton",
+                "description": "<h3>Arica Hilton</h3>",
+                "tags": [
+                    "Turkey", "America", "Grandmother", "Great Grandmother", "Ottoman Empire",
+                    "Sultan", "Interpreter", "Air Force Base", "Washington, D.C.", "New Mexico",
+                    "Domestic Abuse", "Police", "Father", "Brothers", "Sisters", "Adam and Eve",
+                    "Noah", "Poets", "Philosophers", "Artists", "Catholic School", "Rock of Gibraltar"
+                ],
+                "categories": [
+                    "Place", "Family", "History", "Person", "Job"
+                ],
+                "video": "https://www.youtube.com/embed/JoXkcq7lOTg"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-87.635, 41.889]
+            },
+            "properties": {
+                "id": "nikolaj",
+                "name": "Nikolaj Sorensen",
+                "description": "<h3>Nikolaj Sorensen</h3>",
+                "tags": [
+                    "Mother", "Grandmother", "China", "Guangzhou, China", "South Africa",
+                    "Mauritius", "Apartheid", "London", "San Francisco, CA", "Chinatown",
+                    "Hawaii", "Father", "Chess", "Army", "Cook", "Translator", "World War II",
+                    "Draftsperson", "Engineer", "California Highway Authority", "Chinese Immigrants",
+                    "Berkeley", "Journalist", "Cambridge", "Australia", "Sociology", "Hostel",
+                    "Stanford University", "Florist", "Copenhagen", "Johns Hopkins",
+                    "Baltimore", "Boston", "Palo Alto", "Nixon Elementary", "Germany",
+                    "Norway", "Denmark", "Harvard", "Theatre", "Avocado Grove", "Hartford CT",
+                    "South Bend IN", "Notre Dame", "University of Chicago", "Chicago",
+                    "Field Museum", "Cows on Parade", "Brother", "Sister", "MIT",
+                    "Boston College", "Massachusetts", "Oregon Shakespeare Festival",
+                    "Asian-American", "Donald Trump"
+                ],
+                "categories": [
+                    "Family", "Place", "History", "Job", "Culture", "Education",
+                    "Person", "Art"
+                ],
+                "video": "https://www.youtube.com/embed/ertib6Gfelc"
             }
         }
     ]

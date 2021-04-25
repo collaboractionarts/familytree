@@ -9,7 +9,9 @@ categories = [
         "category": "Art",
         "tags": [
             "Poetry", "Paint", "Writer", "Dancer", "Artist", "Storyteller",
-            "Beatbox", "Collaboraction", "Writing"
+            "Beatbox", "Collaboraction", "Writing", "Piano", "Violin",
+            "Silk Road Rising", "Theatre", "Oregon Shakespeare Festival",
+            "Cows on Parade"
         ]
     },
     {
@@ -18,7 +20,9 @@ categories = [
             "Caribbean Flavor", "Music", "Food", "Harlem Accent", "Irish Catholic",
             "Filipino", "Black", "Black Woman", "Light Skin", "Dark Skin", "Anti-Racist",
             "Heritage", "Integration", "American", "Fair Skin", "Legacy", "Lakota", "Mexican",
-            "Native American", "Puerto Rican", "Tejanos", "Mescalaro Apache", "Diversity"
+            "Native American", "Puerto Rican", "Tejanos", "Mescalaro Apache", "Diversity",
+            "Polish Catholics", "Assigned White", "Diaspora", "Jews", "Colonizer",
+            "Justice for Palestinians", "Chinese Immigrants", "Asian-American"
         ]
     },
     {
@@ -29,21 +33,28 @@ categories = [
             "Education", "Morris College", "Boston University", "Oxford University",
             "Wabash College", "Howard University", "Benedict College", "Emory University",
             "University of Illinois", "St Joseph's Hospital", "University of Chicago",
-            "DePaul", "NYU", "SMU",
-            "Nixon Elementary", "Berkeley", "Harvard", "Stanford University", "University of Cambridge",
-            "Johns Hopkins", "Notre Dame", "Maryville Academy", "Learning"
+            "DePaul", "NYU", "SMU", "Nixon Elementary", "Berkeley", "Harvard",
+            "Stanford University", "Cambridge", "Johns Hopkins", "Notre Dame",
+            "Maryville Academy", "Learning"
         ]
     },
     {
         "category": "Emotion",
         "tags": [
-            "Respect", "Grateful", "Pain", "Shame", "Blame", "Abandonment", "Forgiveness", "Respect", "Nervous Breakdown", "Kindess", "Respect"
+            "Respect", "Grateful", "Pain", "Shame", "Blame", "Abandonment", "Forgiveness",
+            "Respect", "Nervous Breakdown", "Kindess", "Respect"
         ]
     },
     {
         "category": "Family",
         "tags": [
-            "Family Reunion", "Barbecue", "Children", "Crest", "Single Mom", "Only Child", "Divorce", "Heirlooms", "Photographs", "Photo Albums", "Family Bible", "Family", "Brother", "Daughters", "Mother", "Grandfather", "Father", "Grandmother", "Mother", "Grandmother", "Grandfather", "Grandchildren", "Brothers", "Blood Brothers", "Aunt", "Daughters", "Family Reunion", "Matriarch", "Sisters", "Daughter", "Mother", "Divorce", "Grandfather", "Aunt", "Father", "Mother", "Grandmother", "Brother", "Sister"
+            "Family Reunion", "Barbecue", "Children", "Crest", "Single Mom",
+            "Only Child", "Divorce", "Heirlooms", "Photographs", "Photo Albums",
+            "Family Bible", "Family", "Brother", "Daughters", "Grandfather",
+            "Father", "Mother", "Grandchildren", "Brothers", "Blood Brothers",
+            "Aunt", "Family Reunion", "Matriarch", "Sisters", "Daughter", "Divorce",
+            "Aunt", "Grandmother", "Brother", "Sister", "Great Grandmother",
+            "Great Grandparents"
         ]
     },
     {
@@ -55,22 +66,32 @@ categories = [
     {
         "category": "History",
         "tags": [
-            "Civil War", "Emancipation", "World War Two", "Civil Rights Movement",
+            "Civil War", "Emancipation", "World War II", "Civil Rights Movement",
             "Partition of India", "Chicago Fire", "Muslim Genocide", "Korean War",
             "The Middle Passage", "Civil War", "Korean War", "Great Depression",
-            "Slavery", "Apartheid", "Segregation", "South East Asian Exodus"
+            "Slavery", "Apartheid", "Segregation", "South East Asian Exodus", "Nazis",
+            "Ottoman Empire", "Arab-Israeli Conflict"
         ]
     },
     {
         "category": "Job",
         "tags": [
-            "Actor", "Real Estate", "Police Officer", "Astronaut", "Dancer", "Marines", "Mother", "Writer", "Producer", "Narrator", "Bar", "Tavern", "Police Officer", "Teacher", "Muler", "Social Justice Activist", "Preacher", "Teacher", "Sharecropper", "Doctor", "Wagon Maker", "Nurse", "Musician", "Finance", "Construction", "American Medical Association", "Educator", "Playwright", "Director", "Attorney", "Probation Officer", "Broadcaster", "Engineer", "Business Man", "Contractor", "Engineer", "Journalist", "Florist", "Draftsperson", "Journalist", "Engineer", "University of Chicago", "MIT", "Boston College", "Teaching"
+            "Actor", "Real Estate", "Police Officer", "Astronaut", "Dancer", "Marines",
+            "Mother", "Writer", "Producer", "Narrator", "Bar", "Tavern", "Police",
+            "Teacher", "Muler", "Social Justice Activist", "Preacher", "Teacher",
+            "Sharecropper", "Doctor", "Wagon Maker", "Nurse", "Musician",
+            "Finance", "Construction", "American Medical Association", "Educator",
+            "Playwright", "Director", "Attorney", "Probation Officer", "Broadcaster",
+            "Engineer", "Business Man", "Contractor", "Journalist", "Florist",
+            "Draftsperson", "Journalist", "University of Chicago", "MIT",
+            "Boston College", "Teaching", "Interpreter", "Poets", "Philosophers",
+            "Grocery Wholesale", "Cook", "Translator"
         ]
     },
     {
         "category": "Language",
         "tags": [
-            "Tagalog", "Swahili"
+            "Tagalog", "Swahili", "Arabic"
         ]
     },
     {
@@ -82,7 +103,9 @@ categories = [
     {
         "category": "Person",
         "tags": [
-            "Judith Jamison", "Alvin Ailey", "Harold Washington", "Donald Trump", "King of Sweden", "Martin Luther King Jr", "Idi Amin", "W. E. B. Du Bois"
+            "Judith Jamison", "Alvin Ailey", "Harold Washington", "Donald Trump", "King of Sweden",
+            "Martin Luther King Jr", "Idi Amin", "W. E. B. Du Bois", "Princess Grace", "Sultan",
+            "Adam and Eve", "Noah"
         ]
     },
     {
@@ -110,7 +133,17 @@ categories = [
             "Palo Alto", "Hawaii", "San Francisco CA", "London", "Australia",
             "Boston", "Norway", "Hartford CT", "South Bend IN",
             "Denmark", "Massachusetts", "Farm", "Playboy Club", "Prison", "Police Department",
-            "St. Paul Baptist Church", "Postal Service", "Hudson Department Store"
+            "St. Paul Baptist Church", "Postal Service", "Hudson Department Store",
+            "Latin America", "Andalucia", "Spain", "Emerald Mines", "Turkey", "Air Force Base",
+            "Washington, D.C.", "New Mexico", "Rock of Gibraltar", "Catholic School",
+            "Slovakia", "Hungary", "Syria", "Ellis Island", "Pennsylvania", "Ohio",
+            "Indiana", "Iran", "Avocado Grove", "Field Museum"
+        ]
+    },
+    {
+        "category": "Religion",
+        "tags": [
+            "Roman Catholic", "Lutheran", "Eastern Orthodox", "Islam", "Judaism"
         ]
     },
     {
@@ -128,7 +161,8 @@ categories = [
     {
         "category": "Violence",
         "tags": [
-            "Child Abuse", "Rape", "Abuse", "Violence"
+            "Child Abuse", "Rape", "Abuse", "Violence", "Pogrom", "Bomb", "Domestic Abuse",
+            "Islamophobia"
         ]
     }
 ]

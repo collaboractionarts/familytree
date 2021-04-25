@@ -34,7 +34,7 @@
             </div>
             <section class="home-content">
                 <div id="intro-img-container">
-                    <img class="intro-img" src="img/fts-1200x925-text-1@1x.png" alt="Family Tree Stories">
+                    <img draggable="false" class="intro-img" src="img/fts-1200x925-text-1@1x.png" alt="Family Tree Stories">
                 </div>
                 <div class="tagbar">
                     <ul>
@@ -115,6 +115,9 @@
                                 var name = e.features[0].properties.name;
                                 var categories = e.features[0].properties.categories.replace(/[\[\]']+/g, '');
                                 var video = e.features[0].properties.video;
+                                var name2 = name.replace(String.fromCharCode(92), "");
+                                var name2 = name2.replace(String.fromCharCode(92), "");
+
 
                                 categories = categories.split(",");
                                 categories.forEach(function(element, index, array) {
@@ -130,9 +133,11 @@
                                 openPopup = marker.properties.id;
 
                                 popup = new mapboxgl.Popup({
-                                    maxWidth: "none"
+                                    maxWidth: "none",
+                                    maxHeight: "none",
+                                    anchor: "center"
                                 });
-                                var content = "<div class=\"story-container\"><div>Story: " + name + "</div>" +
+                                var content = "<div class=\"story-container\"><div>Story: " + name2 + "</div>" +
                                     "<div>Location: " + "</div>" +
                                     "<div>Tags: " + categories + "</div></div>" + "<div class=\"watch-button-container\"><a class=\"watch-button\" href=\"#watchModal\" onclick=\"openModal(\'" + name + "\', \'" + video +
                                     "\');\">Watch</a></div>";
@@ -159,63 +164,63 @@
             <div class="botbar">
                 <div class="collab-logo">
                     <a href="https://www.collaboraction.org/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/collaboraction-logo-dark-alpha-2@2x.svg" alt="Collaboraction.org">
+                        <img draggable="false" src="img/collaboraction-logo-dark-alpha-2@2x.svg" alt="Collaboraction.org">
                     </a>
                 </div>
                 <div class="social">
                     <ul>
                         <li>
                             <a href="https://www.facebook.com/collaboraction" target="_blank" rel="noopener noreferrer">
-                                <img src="img/e0678ef25486466ba65ef6ad47b559e1-1@2x.svg" alt="Facebook">
+                                <img draggable="false" src="img/e0678ef25486466ba65ef6ad47b559e1-1@2x.svg" alt="Facebook">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/collaboraction/" target="_blank" rel="noopener noreferrer">
-                                <img src="img/da7ef6dd1302486c9a67baebe4b364bc-1@2x.svg" alt="Instagram">
+                                <img draggable="false" src="img/da7ef6dd1302486c9a67baebe4b364bc-1@2x.svg" alt="Instagram">
                             </a>
                         </li>
                         <li>
                             <a href="https://twitter.com/collaboraction" target="_blank" rel="noopener noreferrer">
-                                <img src="img/c4392d634a0148fda8b7b2b0ad98293b-1@2x.svg" alt="Twitter">
+                                <img draggable="false" src="img/c4392d634a0148fda8b7b2b0ad98293b-1@2x.svg" alt="Twitter">
                             </a>
                         </li>
                         <li>
                             <a href="http://youtube.com/collaboraction" target="_blank" rel="noopener noreferrer">
-                                <img src="img/e9bb463a1bc4434c9d33b81b1fe937f5-1@2x.svg" alt="YouTube">
+                                <img draggable="false" src="img/e9bb463a1bc4434c9d33b81b1fe937f5-1@2x.svg" alt="YouTube">
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="partners">
                     <a href="https://www.arts.gov/grants/grants-for-arts-projects/program-description" target="_blank" rel="noopener noreferrer">
-                        <img src="img/nefta-logo.png" alt="National Endowment for the Arts">
+                        <img draggable="false" src="img/nefta-logo.png" alt="National Endowment for the Arts">
                     </a>
                     <a href="https://www.chicago.gov/city/en/depts/dca.html" target="_blank" rel="noopener noreferrer">
-                        <img src="img/dcase-4c-logo-2011-1@2x.png" alt="Chicago DCASE">
+                        <img draggable="false" src="img/dcase-4c-logo-2011-1@2x.png" alt="Chicago DCASE">
                     </a>
                     <a href="https://www.ilhumanities.org/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/illinois-humanities-logo-1-1@2x.png" alt="Illinois Humanities">
+                        <img draggable="false" src="img/illinois-humanities-logo-1-1@2x.png" alt="Illinois Humanities">
                     </a>
                     <a href="https://www.cct.org/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/chicago-community-trust-logo.png" alt="The Chicago Community Trust And Affiliates">
+                        <img draggable="false" src="img/chicago-community-trust-logo.png" alt="The Chicago Community Trust And Affiliates">
                     </a>
                     <a>
-                        <img src="img/Feinberg.png" alt="Joseph & Bessie Feinberg Foundation">
+                        <img draggable="false" src="img/Feinberg.png" alt="Joseph & Bessie Feinberg Foundation">
                     </a>
                     <a href="https://avchicago.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/av-chicago-logo-lockup-stacked-color-lg-1@2x.png" alt="AV Chicago">
+                        <img draggable="false" src="img/av-chicago-logo-lockup-stacked-color-lg-1@2x.png" alt="AV Chicago">
                     </a>
                     <a href="https://fylf.org/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/fylf-logo.png" alt="Find Your Light Foundation">
+                        <img draggable="false" src="img/fylf-logo.png" alt="Find Your Light Foundation">
                     </a>
                     <a href="https://www.dhs.state.il.us/page.aspx?item=126286" target="_blank" rel="noopener noreferrer">
-                        <img src="img/healing-illinois-logo.png" alt="Healing Illinois">
+                        <img draggable="false" src="img/healing-illinois-logo.png" alt="Healing Illinois">
                     </a>
                     <a href="https://arts.illinois.gov/" target="_blank" rel="noopener noreferrer">
-                        <img id="iac-logo" src="img/IAC+Logo.png" alt="Illinois Arts Council Agency">
+                        <img id="iac-logo" draggable="false" src="img/IAC+Logo.png" alt="Illinois Arts Council Agency">
                     </a>
                     <a href="https://mjmff.org/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/malnati-logo.png" alt="Marc & Jeanne Malnati Family Foundation">
+                        <img draggable="false" src="img/malnati-logo.png" alt="Marc & Jeanne Malnati Family Foundation">
                     </a>
 
                 </div>
@@ -265,8 +270,9 @@
                         if (video.tagName.toLowerCase() === 'video') {
                             video.pause();
                         } else {
-                            var src = video.src;
-                            video.src = src;
+                            // var src = video.src;
+                            // video.src = src;
+                            video.src = "//:0";
                         }
                     });
                 };

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Family Tree Stories – About</title>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="stories.json"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,500|Poppins:600">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="topbar">
+                <div class="topnav">
+                    <div class="topnav-logo-container">
+                        <img class="topnav-logo" src="img/fts-title-beta-white-1@2x.png" alt="FTS Logo">
+                    </div>
+                    <div class="topnav-links">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#storylist">Word Cloud</a></li>
+                            <li><a href="#taglist">Share My Story</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                    <ul>
+                </div>
+            </div>
+            <section class="about-content">
+                <div id="about">
+                    <embed src="img/fts-about.pdf#toolbar=0&navpanes=0&scrollbar=0&view=Fit&statusbad=0&messages=0" WMODE="transparent" width="100%" height="100%" type="application/pdf">
+                </div>
+
+            </section>
+            <div class="botbar">
+                <div class="collab-logo">
+                    <a href="https://www.collaboraction.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/collaboraction-logo-dark-alpha-2@2x.svg" alt="Collaboraction.org">
+                    </a>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/collaboraction" target="_blank" rel="noopener noreferrer">
+                                <img src="img/e0678ef25486466ba65ef6ad47b559e1-1@2x.svg" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/collaboraction/" target="_blank" rel="noopener noreferrer">
+                                <img src="img/da7ef6dd1302486c9a67baebe4b364bc-1@2x.svg" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/collaboraction" target="_blank" rel="noopener noreferrer">
+                                <img src="img/c4392d634a0148fda8b7b2b0ad98293b-1@2x.svg" alt="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://youtube.com/collaboraction" target="_blank" rel="noopener noreferrer">
+                                <img src="img/e9bb463a1bc4434c9d33b81b1fe937f5-1@2x.svg" alt="YouTube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="partners">
+                    <a href="https://www.arts.gov/grants/grants-for-arts-projects/program-description" target="_blank" rel="noopener noreferrer">
+                        <img src="img/nefta-logo.png" alt="National Endowment for the Arts">
+                    </a>
+                    <a href="https://www.chicago.gov/city/en/depts/dca.html" target="_blank" rel="noopener noreferrer">
+                        <img src="img/dcase-4c-logo-2011-1@2x.png" alt="Chicago DCASE">
+                    </a>
+                    <a href="https://www.ilhumanities.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/illinois-humanities-logo-1-1@2x.png" alt="Illinois Humanities">
+                    </a>
+                    <a href="https://www.cct.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/chicago-community-trust-logo.png" alt="The Chicago Community Trust And Affiliates">
+                    </a>
+                    <a>
+                        <img src="img/Feinberg.png" alt="Joseph & Bessie Feinberg Foundation">
+                    </a>
+                    <a href="https://avchicago.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/av-chicago-logo-lockup-stacked-color-lg-1@2x.png" alt="AV Chicago">
+                    </a>
+                    <a href="https://fylf.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/fylf-logo.png" alt="Find Your Light Foundation">
+                    </a>
+                    <a href="https://www.dhs.state.il.us/page.aspx?item=126286" target="_blank" rel="noopener noreferrer">
+                        <img src="img/healing-illinois-logo.png" alt="Healing Illinois">
+                    </a>
+                    <a href="https://arts.illinois.gov/" target="_blank" rel="noopener noreferrer">
+                        <img id="iac-logo" src="img/IAC+Logo.png" alt="Illinois Arts Council Agency">
+                    </a>
+                    <a href="https://mjmff.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/malnati-logo.png" alt="Marc & Jeanne Malnati Family Foundation">
+                    </a>
+
+                </div>
+            </div>
+            <script type="text/javascript">
+                var w = document.querySelector("#width"),
+                    h = document.querySelector("#height"),
+                    c = document.querySelector("#calls"),
+                    timeout = false, // holder for timeout id
+                    delay = 250, // delay after event is "complete" to run callback
+                    calls = 0;
+
+                // window.resize callback function
+                function getDimensions() {
+                    w.innerHTML = window.innerWidth;
+                    h.innerHTML = window.innerHeight;
+                    calls += 1;
+                    c.innerHTML = calls;
+                }
+
+                // window.resize event listener
+                window.addEventListener('resize', function() {
+                    // clear the timeout
+                    clearTimeout(timeout);
+                    // start timing for event "completion"
+                    timeout = setTimeout(getDimensions, delay);
+                });
+
+                getDimensions();
+            </script>
+    </body>
+
+</html>

@@ -157,11 +157,11 @@ body {
     outline: none;
 }
 
-.content {
+.home-content {
     position: relative;
     left: 0;
     right: 0;
-    height: calc(100vw * 0.72265625);    
+    height: calc(100vw * 0.72265625);
 }
 
 .mapboxgl-map {
@@ -176,8 +176,26 @@ body {
     position: absolute;
     /* top: 0;
     bottom: 0; */
-    /* bottom: 40px; */
     width: 100%;
+}
+
+.about-content {
+    position: relative;
+    left: 0;
+    right: 0;
+    height: calc(100vw * 1.294111);
+}
+
+#about {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#about embed {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    object-fit:contain;
 }
 
 .mapbox-improve-map {
@@ -199,7 +217,7 @@ body {
     top: 0;
     left: 0;
     bottom:0;
-    width: 100%;
+    width: inherit;
     height: inherit;
     max-width: 100%;
 }
@@ -235,45 +253,46 @@ animation-duration: 0.4s
 */
 .mapboxgl-popup-content {
     position: relative;
-    background-color: black;
-    border: 5px solid #FFA800;
-    border-radius: 15px;
+    background-color: white;
+    border: 5px solid #629b47;
+    border-radius: 15px 15px 15px 15px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     margin: auto;
-    padding: auto;
-    height: 282px;
+    padding: 0;
+    height: 275px;
     width: 510px;
     font-family: "Roboto", "Helvetica";
     font-size: 24px;
     font-weight: 500;
-    color: #FFA800;
+    color: black;
     line-height: 120%;
 }
 
 .story-container {
-    position: absolute;
+    position: relative;
     top: 40px;
-    left: 32px;
+    width: 90%;
     height: auto;
+    margin: auto;
 }
 
 .mapboxgl-pop-content div {
     display: block;
-    position: absolute;
+    margin: auto;
     height: auto;
-    left: 32px;
     text-align: left;
     font-style: normal;
 }
 
 .mapboxgl-popup-content a {
-    color: #FFA800;
+    color: black;
 }
 
 .watch-button-container {
     position: absolute;
     top: 220px;
     width: 100%;
+    height: auto;
     text-align: center;
 }
 
@@ -281,11 +300,12 @@ animation-duration: 0.4s
     display: inline-block;
     justify-content: center;
     border-radius: 35px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    margin-bottom: 50%;
+    padding-bottom: 3px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 0.8px solid #FFA800;
+    border: 0.8px solid black;
     text-decoration: none;
     font-size: 12px;
     font-family: "Poppins", "Helvectica";
@@ -293,7 +313,7 @@ animation-duration: 0.4s
 
 .watch-button-container a:hover {
     border-radius: 50px;
-    background-color: #111111;
+    background-color: #EEEEEE;
 }
 
 .mapboxgl-popup-close-button {
@@ -416,18 +436,36 @@ animation-duration: 0.4s
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: black;
+  background-color: white;
+  color: black;
   margin: auto;
   padding: 0;
-  border: 5px solid #FFA800;
+  border: 5px solid #629b47;
   border-radius: 15px;
   width: 80%;
-  height: 80%;
+  height: calc(100vw * 0.8 * 0.8);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 70.3125%;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#video {
+    width: 90% !important;
+    height: 90% !important;
+    display: block;
+    margin: auto;
+    padding: 0;
 }
 
 /* Add Animation */
@@ -443,7 +481,7 @@ animation-duration: 0.4s
 
 /* The Close Button */
 .close {
-  color: white;
+  color: black;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -459,17 +497,17 @@ animation-duration: 0.4s
 .modal-header {
   padding: 2px 16px;
   background-color: none;
-  color: white;
+  color: black;
 }
 
 .modal-body {
     padding: 2px 16px;
     font-family: "Roboto" "Helvetica"
-    color: #FFA800;
+    color: black;
 }
 
 .modal-footer {
   padding: 2px 16px;
   background-color: none;
-  color: white;
+  color: black;
 }

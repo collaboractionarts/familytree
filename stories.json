@@ -22,7 +22,8 @@ data = {
                 ],
                 "categories": [
                     "Place", "Education", "History", "Object", "Family", "Language", "Culture"
-                ]
+                ],
+                "video": "https://www.youtube.com/embed/j8dsJ6dQfMA"
             }
         },
         {
@@ -36,7 +37,8 @@ data = {
                 "name": "Jamil Khoury",
                 "description": "<h3>Jamil Khoury</h3>",
                 "tags": [],
-                "categories": []
+                "categories": [],
+                "video": "https://www.youtube.com/embed/2pUL0FCnXYg"
             }
         },
         {
@@ -62,7 +64,8 @@ data = {
                 ],
                 "categories": [
                     "Place", "Person", "Culture", "Education", "Job", "Health", "Art"
-                ]
+                ],
+                "video": "https://www.youtube.com/embed/GorGkZ9R77A"
             }
         },
         {
@@ -89,7 +92,8 @@ data = {
                 ],
                 "categories": [
                     "Job", "Art", "Person", "Travel", "Place", "Culture", "Family", "Television", "Emotion"
-                ]
+                ],
+                "video": "https://www.youtube.com/embed/545wcvWk6E0"
             }
         },
         {
@@ -114,7 +118,8 @@ data = {
                 ],
                 "categories": [
                     "Family", "Job", "Place", "History", "Emotion"
-                ]
+                ],
+                "video": "https://www.youtube.com/embed/EHr75ozhj6A"
             }
         },
         {
@@ -139,7 +144,8 @@ data = {
                 ],
                 "categories": [
                     "Place", "Education", "Family", "Job", "History"
-                ]
+                ],
+                "video": "https://www.youtube.com/embed/PdRqepImN0A"
             }
         },
         {
@@ -153,7 +159,8 @@ data = {
                 "name": "Sandra Delgado",
                 "description": "<h3>Sandra Delgado</h3>",
                 "tags": [],
-                "categories": []
+                "categories": [],
+                "video": "https://www.youtube.com/embed/glIixL2y4as"
             }
         },
         {
@@ -175,7 +182,8 @@ data = {
                 ],
                 "categories": [
                     "Place", "History", "Family", "Person", "Language"
-                ]
+                ],
+                "video": "https://www.youtube.com/embed/eSvNG3E3KSY"
             }
         },
         {
@@ -198,7 +206,8 @@ data = {
                 ],
                 "categories": [
                     "Family", "Place", "Animal", "Emotion", "Violence"
-                ]
+                ],
+                "video": "https://www.youtube.com/embed/swKuW7RO13c"
             }
         },
         {
@@ -229,7 +238,8 @@ data = {
                 ],
                 "categories": [
                     "Job", "Place", "Education", "History"
-                ]
+                ],
+                "video": "https://www.youtube.com/embed/GO1LQQwozzU"
             }
         },
         {
@@ -266,7 +276,8 @@ data = {
                 ],
                 "categories": [
                     "Place", "Job", "Family", "History"
-                ]
+                ],
+                "video": "https://www.youtube.com/embed/JmCJJ93AAGo"
             }
         },
         {
@@ -288,7 +299,8 @@ data = {
                 ],
                 "categories": [
                     "Job", "Place", "History"
-                ]
+                ],
+                "video": "https://www.youtube.com/embed/8lVAdQ9VgLY"
             }
         },
         {
@@ -306,7 +318,8 @@ data = {
                 ],
                 "categories": [
                     "Place", "Education", "Family", "History", "Health", "Job",
-                ]
+                ],
+                "video": "https://www.youtube.com/embed/l4pZrTZOvYM"
             }
         }
     ]

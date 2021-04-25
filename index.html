@@ -3,13 +3,13 @@
 
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Family Tree Stories – Home</title>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="stories.json"></script>
         <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
-        <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
-        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet'>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,500|Poppins:600">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -23,17 +23,16 @@
                     </div>
                     <div class="topnav-links">
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#storylist">Story List</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#storylist">Word Cloud</a></li>
                             <li><a href="#taglist">Share My Story</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a class="support-button" href="#support">Support</a></li>
+                            <li><a href="about.html">About</a></li>
                         </ul>
                     </div>
                     <ul>
                 </div>
             </div>
-            <section class="content">
+            <section class="home-content">
                 <div id="intro-img-container">
                     <img class="intro-img" src="img/fts-1200x925-text-1@1x.png" alt="Family Tree Stories">
                 </div>
@@ -115,6 +114,7 @@
                                 var coordinates = e.features[0].geometry.coordinates.slice();
                                 var name = e.features[0].properties.name;
                                 var categories = e.features[0].properties.categories.replace(/[\[\]']+/g, '');
+                                var video = e.features[0].properties.video;
 
                                 categories = categories.split(",");
                                 categories.forEach(function(element, index, array) {
@@ -134,7 +134,8 @@
                                 });
                                 var content = "<div class=\"story-container\"><div>Story: " + name + "</div>" +
                                     "<div>Location: " + "</div>" +
-                                    "<div>Tags: " + categories + "</div></div><div class=\"watch-button-container\"><a class=\"watch-button\" href=\"#watchModal\" onclick=\"openModal();\">Watch</a></div>";
+                                    "<div>Tags: " + categories + "</div></div>" + "<div class=\"watch-button-container\"><a class=\"watch-button\" href=\"#watchModal\" onclick=\"openModal(\'" + name + "\', \'" + video +
+                                    "\');\">Watch</a></div>";
                                 popup.setLngLat(coordinates).setHTML(content).addTo(map);
                                 popup.on('close', function(e) {
                                     map.setPaintProperty(marker.properties.id, 'circle-radius', 12);
@@ -226,21 +227,25 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <span class="close">&times;</span>
-                        <h2>Modal Header</h2>
+                        <h2 id="video-title">Modal Header</h2>
                     </div>
-                    <div class="modal-body">
+                    <div class="video-container">
+                        <iframe id="video" width="560" height="349" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!-- <div class="modal-body">
                         <p>Some text in the Modal Body</p>
                         <p>Some other text...</p>
                     </div>
                     <div class="modal-footer">
                         <h3>Modal Footer</h3>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <script>
                 // Get the modal
                 var modal = document.getElementById("myModal");
-
+                var video = document.getElementById("video");
+                var title = document.getElementById("video-title");
                 // Get the button that opens the modal
                 var btn = document.getElementById("myBtn");
 
@@ -248,19 +253,35 @@
                 var span = document.getElementsByClassName("close")[0];
 
                 // When the user clicks the button, open the modal
-                function openModal() {
+                function openModal(name, url) {
+                    video.src = url;
+                    title.innerHTML = name;
                     modal.style.display = "block";
                 }
+
+                var stopVideos = function() {
+                    var videos = document.querySelectorAll('iframe, video');
+                    Array.prototype.forEach.call(videos, function(video) {
+                        if (video.tagName.toLowerCase() === 'video') {
+                            video.pause();
+                        } else {
+                            var src = video.src;
+                            video.src = src;
+                        }
+                    });
+                };
 
                 // When the user clicks on <span> (x), close the modal
                 span.onclick = function() {
                     modal.style.display = "none";
+                    stopVideos();
                 }
 
                 // When the user clicks anywhere outside of the modal, close it
                 window.onclick = function(event) {
                     if (event.target == modal) {
                         modal.style.display = "none";
+                        stopVideos();
                     }
                 }
             </script>

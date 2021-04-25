@@ -142,6 +142,8 @@
                                     "<div>Tags: " + categories + "</div></div>" + "<div class=\"watch-button-container\"><a class=\"watch-button\" href=\"#watchModal\" onclick=\"openModal(\'" + name + "\', \'" + video +
                                     "\');\">Watch</a></div>";
                                 popup.setLngLat(coordinates).setHTML(content).addTo(map);
+                                closeButton = document.getElementsByClassName("mapboxgl-popup-close-button")[0];
+                                closeButton.style.color = "#629b47";
                                 popup.on('close', function(e) {
                                     map.setPaintProperty(marker.properties.id, 'circle-radius', 12);
                                     popup = null;

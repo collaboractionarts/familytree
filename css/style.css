@@ -259,6 +259,10 @@ body {
     animation-duration: 0.4s
 }
 
+.mapboxgl-popup-close-button {
+    color: #629b47;
+}
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0}

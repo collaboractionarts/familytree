@@ -24,7 +24,7 @@
                     <div class="topnav-links">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#storylist">Word Cloud</a></li>
+                            <li><a href="wordtree.html">Word Tree</a></li>
                             <li><a href="#taglist">Share My Story</a></li>
                             <li><a href="about.html">About</a></li>
                         </ul>
@@ -113,19 +113,19 @@
 
                                 var coordinates = e.features[0].geometry.coordinates.slice();
                                 var name = e.features[0].properties.name;
-                                var categories = e.features[0].properties.categories.replace(/[\[\]']+/g, '');
+                                var tags = e.features[0].properties.tags.replace(/[\[\]']+/g, '');
                                 var video = e.features[0].properties.video;
                                 var name2 = name.replace(String.fromCharCode(92), "");
                                 var name2 = name2.replace(String.fromCharCode(92), "");
 
 
-                                categories = categories.split(",");
-                                categories.forEach(function(element, index, array) {
+                                tags = tags.split(",");
+                                tags.forEach(function(element, index, array) {
                                     element = "#" + element.slice(1, -1).toUpperCase();
                                     array[index] = "<a href=\"" + element + "\">" + element + "</a>";
                                 });
 
-                                categories = categories.sort().join(', ');
+                                tags = tags.sort().join(', ');
 
                                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
@@ -139,7 +139,8 @@
                                 });
                                 var content = "<div class=\"story-container\"><div>Story: " + name2 + "</div>" +
                                     "<div>Location: " + "</div>" +
-                                    "<div>Tags: " + categories + "</div></div>" + "<div class=\"watch-button-container\"><a class=\"watch-button\" href=\"#watchModal\" onclick=\"openModal(\'" + name + "\', \'" + video +
+                                    "<div class=\"tags\">" + tags + "</div></div>" + "<div class=\"watch-button-container\"><a class=\"watch-button\" href=\"#watchModal\" onclick=\"openModal(\'" + name + "\', \'" +
+                                    video +
                                     "\');\">Watch</a></div>";
                                 popup.setLngLat(coordinates).setHTML(content).addTo(map);
                                 closeButton = document.getElementsByClassName("mapboxgl-popup-close-button")[0];

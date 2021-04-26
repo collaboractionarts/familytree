@@ -4,7 +4,7 @@
 <defs>
 <style type="text/css"> @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@400&amp;display=swap); </style>
 </defs>
-<g>
+<g class="words">
 <g transform="translate(510,382) rotate(-11.277111068884846,0,0)">
 <text fill="#abad23" stroke="none" font-family="Oswald" font-size="116px" font-style="normal" font-weight="normal" x="-114.08599853515625" y="-46.400000000000006" text-anchor="start" dominant-baseline="alphabetic">Place</text>
 </g>

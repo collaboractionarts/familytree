@@ -1,4 +1,4 @@
-data = {
+storyData = {
     "type": "FeatureCollection",
     "features": [{
             "type": "Feature",
@@ -9,7 +9,7 @@ data = {
             "properties": {
                 "id": "aria",
                 "name": "Aria Mallare",
-                "location": "",
+                "location": "West Loop",
                 "tags": [
                     "Suitcase", "Heirlooms", "Photographs", "Photo Albums", "Nashville",
                     "Slavery", "Dark Skin", "Fair Skin", "Family Bible", "Education",
@@ -35,7 +35,7 @@ data = {
             "properties": {
                 "id": "jamil",
                 "name": "Jamil Khoury",
-                "location": "",
+                "location": "The Loop",
                 "tags": [
                     "Arabic", "Mother", "Great Grandparents", "Chicago", "Slovakia",
                     "Hungary", "Grocery Wholesale", "Grandfather", "Grandmother",
@@ -60,7 +60,7 @@ data = {
             "properties": {
                 "id": "sean",
                 "name": "Sean Patrick Leonard",
-                "location": "",
+                "location": "Irving Park",
                 "tags": [
                     "Ireland", "County Claire", "Chicago", "Englewood", "Palos Hills",
                     "Police Officer", "Irish Catholic", "South Side of Chicago",
@@ -88,7 +88,7 @@ data = {
             "properties": {
                 "id": "dana",
                 "name": "Dana Anderson",
-                "location": "",
+                "location": "Oak Park",
                 "tags": [
                     "West Indies", "Boat", "Music", "Food", "Caribbean Flavor",
                     "New York", "Harlem", "Harlem Accent", "Family Reunion", "Slavery",
@@ -115,7 +115,7 @@ data = {
             "properties": {
                 "id": "loretta",
                 "name": "Loretta \\\'Firekeeper\\\' Hawkins",
-                "location": "",
+                "location": "South Chicago",
                 "tags": [
                     "Fairy Tale", "Brothers", "Slavery", "Plantation", "Slave Owner",
                     "Civil War", "Emancipation", "Names", "Slave Name", "Blood Brothers",
@@ -141,7 +141,7 @@ data = {
             "properties": {
                 "id": "gregory",
                 "name": "Gregory Qaiyum, (aka GQ)",
-                "location": "",
+                "location": "Fox Lake",
                 "tags": [
                     "Mother", "Chicago", "Father", "Rebdorf, Germany", "Grandfather",
                     "Munich", "Wagon Maker", "South America", "Grandmother",
@@ -162,7 +162,7 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.760, 41.95]
+                "coordinates": [-87.7646, 41.9532]
             },
             "properties": {
                 "id": "sandra",
@@ -190,7 +190,7 @@ data = {
             "properties": {
                 "id": "priya",
                 "name": "Priya Shah",
-                "location": "",
+                "location": "West Loop",
                 "tags": [
                     "India", "Mother", "Grandfather", "Uganda", "British Railway",
                     "East Africa", "Grandmother", "Swahili", "Idi Amin",
@@ -213,7 +213,7 @@ data = {
             "properties": {
                 "id": "sammy",
                 "name": "Sammy Rangel",
-                "location": "",
+                "location": "Racine, WI",
                 "tags": [
                     "Mexican", "Texas", "Tejanos", "Mescalaro Apache", "Military",
                     "Abuse", "Giant Tortoise", "Fishing", "Perch", "Violence",
@@ -237,7 +237,7 @@ data = {
             "properties": {
                 "id": "finley",
                 "name": "Finley C. Campbell",
-                "location": "",
+                "location": "Kenwood",
                 "tags": [
                     "White Supremacy", "Cherokee", "Slavery", "Cherokee Hills SC",
                     "Concubine", "Jubilee", "Irish", "Lynching", "Land", "Asheville NC",
@@ -269,7 +269,7 @@ data = {
             "properties": {
                 "id": "jasmine",
                 "name": "Jasmine Robinson",
-                "location": "",
+                "location": "West Englewood",
                 "tags": [
                     "Colombia", "Bogota", "Engineer", "Radio Station", "Broadcaster",
                     "Guerillas", "United States", "Slavery", "Charleston SC", "Matriarch",
@@ -293,7 +293,7 @@ data = {
             "properties": {
                 "id": "tommy",
                 "name": "Tommy Carroll",
-                "location": "",
+                "location": "Rogers Park",
                 "tags": [
                     "Iowa", "Farming", "Germany", "Americana", "One-Room Schoolhouse",
                      "Baseball", "Chicago", "Accounting", "Midwest", "Ireland",
@@ -316,7 +316,7 @@ data = {
             "properties": {
                 "id": "jacqueline",
                 "name": "Jacqueline Russell",
-                "location": "",
+                "location": "Irving Park",
                 "tags": [
                     "Texas", "Log Cabin", "Contractor", "Dallas TX", "Great Depression",
                     "Tuberculosis", "Sanatorium", "Orphanage", "Adoption", "Grandfather",
@@ -369,7 +369,7 @@ data = {
             "properties": {
                 "id": "arica",
                 "name": "Arica Hilton",
-                "location": "",
+                "location": "River North",
                 "tags": [
                     "Turkey", "America", "Grandmother", "Great Grandmother", "Ottoman Empire",
                     "Sultan", "Interpreter", "Air Force Base", "Washington, D.C.", "New Mexico",

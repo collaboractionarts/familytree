@@ -39,7 +39,7 @@
                         Click to Enter
                     </div>
                 </div>
-                <div class="tagbar">
+                <!-- <div class="tagbar">
                     <ul>
                         <li><a href="#ANIMAL">#ANIMAL</a></li>
                         <li><a href="#ART">#ART</a></li>
@@ -54,7 +54,7 @@
                         <li><a href="#PERSON">#PERSON</a></li>
                         <li><a href="#PLACE">#PLACE</a></li>
                     </ul>
-                </div>
+                </div> -->
                 <div id='map'></div>
             </section>
             <script>
@@ -88,7 +88,7 @@
 
 
                 map.on('style.load', function() {
-                    var geojson = data;
+                    var geojson = storyData;
                     var popup = null;
                     var openPopup = null;
                     geojson.features.forEach(function(marker) {
@@ -111,9 +111,12 @@
                             }
                         });
                         map.on('click', marker.properties.id, function(e) {
+                            // If no popup is currently opened, open a new popup for the clicked marker
                             if (popup === null || openPopup !== marker.properties.id) {
+                                // Grow the clicked marker
                                 map.setPaintProperty(marker.properties.id, 'circle-radius', 26);
 
+                                // Get information about the story associated with the clicked marker
                                 var coordinates = e.features[0].geometry.coordinates.slice();
                                 var name = e.features[0].properties.name;
                                 var location = e.features[0].properties.location;
@@ -122,32 +125,43 @@
                                 var name2 = name.replace(String.fromCharCode(92), "");
                                 var name2 = name2.replace(String.fromCharCode(92), "");
 
+                                // Process the tags into anchor elements with hashtags
                                 tags = tags.split(",");
                                 tags.forEach(function(element, index, array) {
                                     element = "#" + element.slice(1, -1).toUpperCase();
                                     array[index] = "<a href=\"" + element + "\">" + element + "</a>";
                                 });
-
                                 tags = tags.sort().join(' ');
 
                                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                                 }
+
+                                // Indicate that a popup is currently open
                                 openPopup = marker.properties.id;
 
+                                // Set layout properties for the popup
                                 popup = new mapboxgl.Popup({
                                     maxWidth: "none",
                                     maxHeight: "none",
                                     anchor: "center"
                                 });
+
+                                // Create the HTML contents of the popup
                                 var content = "<div class=\"story-container\"><div>Story: " + name2 + "</div>" +
                                     "<div>Location: " + location + "</div>" +
                                     "<div class=\"tags\">" + tags + "</div></div>" + "<div class=\"watch-button-container\"><a class=\"watch-button\" href=\"#watchModal\" onclick=\"openModal(\'" + name + "\', \'" +
                                     video +
                                     "\');\">Watch</a></div>";
+
+                                // Add the popup to the map with the given coordinates and HTML content
                                 popup.setLngLat(coordinates).setHTML(content).addTo(map);
+
+                                // Set the color of the popup's close button
                                 closeButton = document.getElementsByClassName("mapboxgl-popup-close-button")[0];
                                 closeButton.style.color = "#629b47";
+
+                                // Set the behavior of the close button
                                 popup.on('close', function(e) {
                                     map.setPaintProperty(marker.properties.id, 'circle-radius', 12);
                                     popup = null;

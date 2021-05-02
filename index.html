@@ -35,6 +35,9 @@
             <section class="home-content">
                 <div id="intro-img-container">
                     <img draggable="false" class="intro-img" src="img/fts-1200x925-text-1@1x.png" alt="Family Tree Stories">
+                    <div class="bottom-center">
+                        Click to Enter
+                    </div>
                 </div>
                 <div class="tagbar">
                     <ul>
@@ -113,11 +116,11 @@
 
                                 var coordinates = e.features[0].geometry.coordinates.slice();
                                 var name = e.features[0].properties.name;
+                                var location = e.features[0].properties.location;
                                 var tags = e.features[0].properties.tags.replace(/[\[\]']+/g, '');
                                 var video = e.features[0].properties.video;
                                 var name2 = name.replace(String.fromCharCode(92), "");
                                 var name2 = name2.replace(String.fromCharCode(92), "");
-
 
                                 tags = tags.split(",");
                                 tags.forEach(function(element, index, array) {
@@ -125,7 +128,7 @@
                                     array[index] = "<a href=\"" + element + "\">" + element + "</a>";
                                 });
 
-                                tags = tags.sort().join(', ');
+                                tags = tags.sort().join(' ');
 
                                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
@@ -138,7 +141,7 @@
                                     anchor: "center"
                                 });
                                 var content = "<div class=\"story-container\"><div>Story: " + name2 + "</div>" +
-                                    "<div>Location: " + "</div>" +
+                                    "<div>Location: " + location + "</div>" +
                                     "<div class=\"tags\">" + tags + "</div></div>" + "<div class=\"watch-button-container\"><a class=\"watch-button\" href=\"#watchModal\" onclick=\"openModal(\'" + name + "\', \'" +
                                     video +
                                     "\');\">Watch</a></div>";
@@ -195,37 +198,9 @@
                     </ul>
                 </div>
                 <div class="partners">
-                    <a href="https://www.arts.gov/grants/grants-for-arts-projects/program-description" target="_blank" rel="noopener noreferrer">
-                        <img draggable="false" src="img/nefta-logo.png" alt="National Endowment for the Arts">
-                    </a>
-                    <a href="https://www.chicago.gov/city/en/depts/dca.html" target="_blank" rel="noopener noreferrer">
-                        <img draggable="false" src="img/dcase-4c-logo-2011-1@2x.png" alt="Chicago DCASE">
-                    </a>
-                    <a href="https://www.ilhumanities.org/" target="_blank" rel="noopener noreferrer">
-                        <img draggable="false" src="img/illinois-humanities-logo-1-1@2x.png" alt="Illinois Humanities">
-                    </a>
-                    <a href="https://www.cct.org/" target="_blank" rel="noopener noreferrer">
-                        <img draggable="false" src="img/chicago-community-trust-logo.png" alt="The Chicago Community Trust And Affiliates">
-                    </a>
-                    <a>
-                        <img draggable="false" src="img/Feinberg.png" alt="Joseph & Bessie Feinberg Foundation">
-                    </a>
-                    <a href="https://avchicago.com/" target="_blank" rel="noopener noreferrer">
-                        <img draggable="false" src="img/av-chicago-logo-lockup-stacked-color-lg-1@2x.png" alt="AV Chicago">
-                    </a>
-                    <a href="https://fylf.org/" target="_blank" rel="noopener noreferrer">
-                        <img draggable="false" src="img/fylf-logo.png" alt="Find Your Light Foundation">
-                    </a>
                     <a href="https://www.dhs.state.il.us/page.aspx?item=126286" target="_blank" rel="noopener noreferrer">
                         <img draggable="false" src="img/healing-illinois-logo.png" alt="Healing Illinois">
                     </a>
-                    <a href="https://arts.illinois.gov/" target="_blank" rel="noopener noreferrer">
-                        <img id="iac-logo" draggable="false" src="img/IAC+Logo.png" alt="Illinois Arts Council Agency">
-                    </a>
-                    <a href="https://mjmff.org/" target="_blank" rel="noopener noreferrer">
-                        <img draggable="false" src="img/malnati-logo.png" alt="Marc & Jeanne Malnati Family Foundation">
-                    </a>
-
                 </div>
             </div>
             <!-- The Modal -->

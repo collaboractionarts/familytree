@@ -9,7 +9,7 @@ data = {
             "properties": {
                 "id": "aria",
                 "name": "Aria Mallare",
-                "description": "<h3>Aria Mallare</h3>",
+                "location": "",
                 "tags": [
                     "Suitcase", "Heirlooms", "Photographs", "Photo Albums", "Nashville",
                     "Slavery", "Dark Skin", "Fair Skin", "Family Bible", "Education",
@@ -35,7 +35,7 @@ data = {
             "properties": {
                 "id": "jamil",
                 "name": "Jamil Khoury",
-                "description": "<h3>Jamil Khoury</h3>",
+                "location": "",
                 "tags": [
                     "Arabic", "Mother", "Great Grandparents", "Chicago", "Slovakia",
                     "Hungary", "Grocery Wholesale", "Grandfather", "Grandmother",
@@ -60,7 +60,7 @@ data = {
             "properties": {
                 "id": "sean",
                 "name": "Sean Patrick Leonard",
-                "description": "<h3>Sean Patrick Leonard</h3>",
+                "location": "",
                 "tags": [
                     "Ireland", "County Claire", "Chicago", "Englewood", "Palos Hills",
                     "Police Officer", "Irish Catholic", "South Side of Chicago",
@@ -88,7 +88,7 @@ data = {
             "properties": {
                 "id": "dana",
                 "name": "Dana Anderson",
-                "description": "<h3>Dana Anderson</h3>",
+                "location": "",
                 "tags": [
                     "West Indies", "Boat", "Music", "Food", "Caribbean Flavor",
                     "New York", "Harlem", "Harlem Accent", "Family Reunion", "Slavery",
@@ -115,7 +115,7 @@ data = {
             "properties": {
                 "id": "loretta",
                 "name": "Loretta \\\'Firekeeper\\\' Hawkins",
-                "description": "<h3>Loretta \"Firekeeper\" Hawkins</h3>",
+                "location": "",
                 "tags": [
                     "Fairy Tale", "Brothers", "Slavery", "Plantation", "Slave Owner",
                     "Civil War", "Emancipation", "Names", "Slave Name", "Blood Brothers",
@@ -141,7 +141,7 @@ data = {
             "properties": {
                 "id": "gregory",
                 "name": "Gregory Qaiyum, (aka GQ)",
-                "description": "<h3>Gregory Qaiyum, (aka GQ)</h3>",
+                "location": "",
                 "tags": [
                     "Mother", "Chicago", "Father", "Rebdorf, Germany", "Grandfather",
                     "Munich", "Wagon Maker", "South America", "Grandmother",
@@ -162,12 +162,12 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.795, 41.865]
+                "coordinates": [-87.760, 41.95]
             },
             "properties": {
                 "id": "sandra",
                 "name": "Sandra Delgado",
-                "description": "<h3>Sandra Delgado</h3>",
+                "location": "Portage Park",
                 "tags": [
                     "Latin America", "Father", "Mother", "Colombia", "Only Child",
                     "United States", "Bomb", "Violence", "Brother", "Europe",
@@ -190,7 +190,7 @@ data = {
             "properties": {
                 "id": "priya",
                 "name": "Priya Shah",
-                "description": "<h3>Priya Shah</h3>",
+                "location": "",
                 "tags": [
                     "India", "Mother", "Grandfather", "Uganda", "British Railway",
                     "East Africa", "Grandmother", "Swahili", "Idi Amin",
@@ -213,7 +213,7 @@ data = {
             "properties": {
                 "id": "sammy",
                 "name": "Sammy Rangel",
-                "description": "<h3>Sammy Rangel</h3>",
+                "location": "",
                 "tags": [
                     "Mexican", "Texas", "Tejanos", "Mescalaro Apache", "Military",
                     "Abuse", "Giant Tortoise", "Fishing", "Perch", "Violence",
@@ -237,7 +237,7 @@ data = {
             "properties": {
                 "id": "finley",
                 "name": "Finley C. Campbell",
-                "description": "<h3>Finley C. Campbell</h3>",
+                "location": "",
                 "tags": [
                     "White Supremacy", "Cherokee", "Slavery", "Cherokee Hills SC",
                     "Concubine", "Jubilee", "Irish", "Lynching", "Land", "Asheville NC",
@@ -264,26 +264,12 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.663, 41.953]
-            },
-            "properties": {
-                "id": "elizabeth",
-                "name": "Elizabeth Laidlaw",
-                "description": "<h3>Elizabeth Laidlaw</h3>",
-                "tags": [],
-                "categories": []
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
                 "coordinates": [-87.669, 41.777]
             },
             "properties": {
                 "id": "jasmine",
                 "name": "Jasmine Robinson",
-                "description": "<h3>Jasmine Robinson</h3>",
+                "location": "",
                 "tags": [
                     "Colombia", "Bogota", "Engineer", "Radio Station", "Broadcaster",
                     "Guerillas", "United States", "Slavery", "Charleston SC", "Matriarch",
@@ -302,12 +288,12 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.669, 42.000]
+                "coordinates": [-87.668, 41.955]
             },
             "properties": {
                 "id": "tommy",
                 "name": "Tommy Carroll",
-                "description": "<h3>Tommy Carroll</h3>",
+                "location": "",
                 "tags": [
                     "Iowa", "Farming", "Germany", "Americana", "One-Room Schoolhouse",
                      "Baseball", "Chicago", "Accounting", "Midwest", "Ireland",
@@ -330,7 +316,7 @@ data = {
             "properties": {
                 "id": "jacqueline",
                 "name": "Jacqueline Russell",
-                "description": "<h3>Jacqueline Russell</h3>",
+                "location": "",
                 "tags": [
                     "Texas", "Log Cabin", "Contractor", "Dallas TX", "Great Depression",
                     "Tuberculosis", "Sanatorium", "Orphanage", "Adoption", "Grandfather",
@@ -356,7 +342,7 @@ data = {
             "properties": {
                 "id": "david",
                 "name": "Dr. David Ansell",
-                "description": "<h3>Dr. David Ansell</h3>",
+                "location": "",
                 "tags": [
                     "Diaspora", "Middle East", "Europe", "King of Sweden", "Poland",
                     "World War II", "England", "Mielec, Poland", "Krakow", "Jews",
@@ -383,7 +369,7 @@ data = {
             "properties": {
                 "id": "arica",
                 "name": "Arica Hilton",
-                "description": "<h3>Arica Hilton</h3>",
+                "location": "",
                 "tags": [
                     "Turkey", "America", "Grandmother", "Great Grandmother", "Ottoman Empire",
                     "Sultan", "Interpreter", "Air Force Base", "Washington, D.C.", "New Mexico",
@@ -400,12 +386,12 @@ data = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.635, 41.889]
+                "coordinates": [-87.67, 42.01]
             },
             "properties": {
                 "id": "nikolaj",
                 "name": "Nikolaj Sorensen",
-                "description": "<h3>Nikolaj Sorensen</h3>",
+                "location": "Rogers Park",
                 "tags": [
                     "Mother", "Grandmother", "China", "Guangzhou, China", "South Africa",
                     "Mauritius", "Apartheid", "London", "San Francisco, CA", "Chinatown",

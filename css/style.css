@@ -118,6 +118,13 @@ body {
     background: linear-gradient(90deg, #b2c5de, #7c9bbc);
 }
 
+.bottom-center {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    color: gray;
+}
+
 .intro-img {
     position: relative;
     height:100%;
@@ -247,7 +254,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     margin: auto;
     padding: 0;
-    height: 275px;
+    height: auto;
     width: 510px;
     font-family: "Roboto", "Helvetica";
     font-size: 24px;
@@ -279,19 +286,21 @@ body {
     position: relative;
     /* top: 40px; */
     width: auto;
-    height: 60%;
+    height: auto;
     padding: 5%;
 }
 
 .story-container div {
     position: relative;
     display: block;
+    margin: auto;
     height: auto;
     width: auto;
 }
 
 .tags {
     font-size: 12px;
+    line-height: 110%;
 }
 
 .mapboxgl-popup-content a {
@@ -299,11 +308,12 @@ body {
 }
 
 .watch-button-container {
-    position: absolute;
+    position: relative;
     text-align: center;
-    width: 100%;
+    width: auto;
     height: auto;
     margin: auto;
+    padding-bottom: 5%;
 }
 
 .watch-button-container a {
@@ -418,9 +428,12 @@ body {
 
 .partners a {
     display: table-cell;
-    margin-bottom: 8px;
+    margin-top: 4px;
+    /* margin-bottom: 4px; */
     width: calc(50% - 4px);
     height: auto;
+    max-height: 50%;
+    min-height: 20%;
     text-align: center;
     vertical-align: middle;
     align-items: center;

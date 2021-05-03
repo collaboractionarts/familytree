@@ -208,7 +208,7 @@ storyData = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.783310, 42.064375]
+                "coordinates": [-87.783310, 42.05]
             },
             "properties": {
                 "id": "sammy",

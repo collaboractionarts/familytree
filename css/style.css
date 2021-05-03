@@ -16,12 +16,13 @@ body {
 
 /* TOP BAR */
 
-.topbar {
-    position: relative;
+#topbar {
+    position: fixed;
+    top: 0;
     padding: 0;
     margin-right: 0;
     margin-left: 0;
-    top: 0;
+    z-index: 9999;
     width: 100%;
     height: 90px;
     /* border-bottom: 3px solid #FFA800; */
@@ -100,12 +101,16 @@ body {
 
 /* GENERAL CONTENT */
 
+section {
+    margin-top: 90px;
+}
+
 .home-content {
     position: relative;
     left: 0;
     right: 0;
     height: calc(100vw * 0.72265625);
-    max-height: 100vh;
+    max-height: calc(100vh - 90px);
 }
 
 *:focus {
@@ -143,6 +148,11 @@ body {
     opacity: 0;
     transition: visibility 0s linear 1000ms, opacity 1000ms;
 }
+
+/* .grow {
+    max-height: 100vh;
+    transition: max-height 1000ms ease-in;
+} */
 
 /* TAGS & MAP */
 

@@ -43,10 +43,13 @@
             </section>
             <script>
                 var fadeTimer = setTimeout("document.getElementById('intro-img-container').classList.toggle('fadeOut');", 20000);
+                // var growTimer = setTimeout("document.getElementsByClassName('home-content')[0].classList.toggle('grow');", 20000);
                 var introImg = document.getElementById("intro-img-container");
+                // var homeContent = document.getElementsByClassName("home-content")[0];
                 var clickIntroImg = introImg.addEventListener('click', function(event) {
                     introImg.removeEventListener('click', clickIntroImg);
                     introImg.classList.toggle("fadeOut");
+                    // homeContent.classList.toggle("grow");
                     clearTimeout(fadeTimer);
                 }, {
                     once: true
@@ -280,30 +283,30 @@
                 }
             </script>
             <script type="text/javascript">
-                var w = document.querySelector("#width"),
-                    h = document.querySelector("#height"),
-                    c = document.querySelector("#calls"),
-                    timeout = false, // holder for timeout id
-                    delay = 250, // delay after event is "complete" to run callback
-                    calls = 0;
-
-                // window.resize callback function
-                function getDimensions() {
-                    w.innerHTML = window.innerWidth;
-                    h.innerHTML = window.innerHeight;
-                    calls += 1;
-                    c.innerHTML = calls;
-                }
-
-                // window.resize event listener
-                window.addEventListener('resize', function() {
-                    // clear the timeout
-                    clearTimeout(timeout);
-                    // start timing for event "completion"
-                    timeout = setTimeout(getDimensions, delay);
-                });
-
-                getDimensions();
+                // var w = document.querySelector("#width"),
+                //     h = document.querySelector("#height"),
+                //     c = document.querySelector("#calls"),
+                //     timeout = false, // holder for timeout id
+                //     delay = 250, // delay after event is "complete" to run callback
+                //     calls = 0;
+                //
+                // // window.resize callback function
+                // function getDimensions() {
+                //     w.innerHTML = window.innerWidth;
+                //     h.innerHTML = window.innerHeight;
+                //     calls += 1;
+                //     c.innerHTML = calls;
+                // }
+                //
+                // // window.resize event listener
+                // window.addEventListener('resize', function() {
+                //     // clear the timeout
+                //     clearTimeout(timeout);
+                //     // start timing for event "completion"
+                //     timeout = setTimeout(getDimensions, delay);
+                // });
+                //
+                // getDimensions();
             </script>
     </body>
 

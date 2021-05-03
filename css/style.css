@@ -357,7 +357,7 @@ body {
     /* left: 0;
     right: 0; */
     height: calc(100vw * 0.75);
-    background: white;
+    background: radial-gradient(circle at center, white 0%, white 50%, #AADDFF 100%);
     bottom: 0;
 }
 
@@ -594,4 +594,21 @@ body {
 
 #videoModal {
     z-index: 5;
+}
+
+g > g:hover {
+    filter: brightness(120%);
+    /* cursor: pointer; */
+}
+
+text {
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+text::selection {
+    background: none;
 }

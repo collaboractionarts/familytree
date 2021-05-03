@@ -19,14 +19,14 @@
             <div id="topbar">
                 <div class="topnav">
                     <div class="topnav-logo-container">
-                        <img class="topnav-logo" src="img/fts-title-beta-white-1@2x.png" alt="FTS Logo">
+                        <img class="topnav-logo" draggable="false" src="img/fts-title-beta-white-1@2x.png" alt="FTS Logo">
                     </div>
                     <div class="topnav-links">
                         <ul>
                             <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
                             <li><a href="wordtree.html">Word Tree</a></li>
                             <li><a href="#taglist">Share My Story</a></li>
-                            <li><a href="about.html">About</a></li>
                         </ul>
                     </div>
                     <ul>
@@ -57,8 +57,8 @@
                 var map = new mapboxgl.Map({
                     container: 'map', // container ID
                     style: 'mapbox://styles/gaissert/ckms06zdd2ks317s418229ih5', // style URL
-                    zoom: 9.8,
-                    center: [-87.610, 41.873]
+                    zoom: 2.5656 + 1.0331 * Math.log(window.innerWidth),
+                    center: [-87.610, 41.890],
                 });
 
                 map.scrollZoom.disable();
@@ -162,7 +162,26 @@
                             map.getCanvas().style.cursor = '';
                         });
                     });
+                    var rtime;
+                    var timeout = false;
+                    var delta = 200;
+                    $(window).resize(function() {
+                        rtime = new Date();
+                        if (timeout === false) {
+                            timeout = true;
+                            setTimeout(resizeend, delta);
+                        }
+                    });
 
+                    function resizeend() {
+                        if (new Date() - rtime < delta) {
+                            setTimeout(resizeend, delta);
+                        } else {
+                            timeout = false;
+                            map.setCenter([-87.610, 41.890]);
+                            map.zoomTo(2.5656 + 1.0331 * Math.log(window.innerWidth));
+                        }
+                    }
                 });
             </script>
             <div class="botbar">
@@ -202,7 +221,7 @@
                 </div>
             </div>
             <!-- The Modal -->
-            <div id="myModal" class="modal">
+            <div id="storyModal" class="modal">
 
                 <!-- Modal content -->
                 <div class="modal-content">
@@ -213,18 +232,11 @@
                     <div class="video-container">
                         <iframe id="video" width="560" height="349" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <!-- <div class="modal-body">
-                        <p>Some text in the Modal Body</p>
-                        <p>Some other text...</p>
-                    </div>
-                    <div class="modal-footer">
-                        <h3>Modal Footer</h3>
-                    </div> -->
                 </div>
             </div>
             <script>
                 // Get the modal
-                var modal = document.getElementById("myModal");
+                var modal = document.getElementById("storyModal");
                 var video = document.getElementById("video");
                 var title = document.getElementById("video-title");
                 // Get the button that opens the modal

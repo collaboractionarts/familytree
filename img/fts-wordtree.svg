@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="768">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 1024 768">
 <defs>
 <style type="text/css"> @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@400&amp;display=swap); </style>
 </defs>
+<svg id="tree-wrapper" x="0" y="0" width="1024" height="768" style="overflow: visible;">
 <g class="words">
 <g transform="translate(510,382) rotate(-11.277111068884846,0,0)">
 <text fill="#abad23" stroke="none" font-family="Oswald" font-size="116px" font-style="normal" font-weight="normal" x="-114.08599853515625" y="-46.400000000000006" text-anchor="start" dominant-baseline="alphabetic">Place</text>
 </g>
 <g transform="translate(528,464) rotate(0,0,0)">
-<text fill="#005f61" stroke="none" font-family="Oswald" font-size="103px" font-style="normal" font-weight="normal" x="-120.87051391601562" y="-41.244137984000005" text-anchor="start" dominant-baseline="alphabetic">Family</text>
+<text onclick="openListModal();" fill="#005f61" stroke="none" font-family="Oswald" font-size="103px" font-style="normal" font-weight="normal" x="-120.87051391601562" y="-41.244137984000005" text-anchor="start" dominant-baseline="alphabetic">Family</text>
 </g>
 <g transform="translate(510,294) rotate(0,0,0)">
 <text fill="#509e2f" stroke="none" font-family="Oswald" font-size="97px" font-style="normal" font-weight="normal" x="-56.890499114990234" y="-38.800000000000004" text-anchor="start" dominant-baseline="alphabetic">Job</text>
@@ -1617,4 +1618,5 @@
 <text fill="#41b6e6" stroke="none" font-family="Oswald" font-size="6px" font-style="normal" font-weight="normal" x="-15.764999389648438" y="-2.5777586240000003" text-anchor="start" dominant-baseline="alphabetic">Collaboraction</text>
 </g>
 </g>
+</svg>
 </svg>

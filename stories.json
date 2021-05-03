@@ -55,7 +55,7 @@ storyData = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.705, 41.946]
+                "coordinates": [-87.735255, 41.962079]
             },
             "properties": {
                 "id": "sean",
@@ -162,7 +162,7 @@ storyData = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.7646, 41.9532]
+                "coordinates": [-87.781574, 41.957022]
             },
             "properties": {
                 "id": "sandra",
@@ -208,7 +208,7 @@ storyData = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.801, 42.705]
+                "coordinates": [-87.783310, 42.064375]
             },
             "properties": {
                 "id": "sammy",
@@ -232,7 +232,7 @@ storyData = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.602, 41.802]
+                "coordinates": [-87.6038, 41.8004]
             },
             "properties": {
                 "id": "finley",
@@ -264,7 +264,7 @@ storyData = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.669, 41.777]
+                "coordinates": [-87.6729, 41.7720]
             },
             "properties": {
                 "id": "jasmine",
@@ -288,7 +288,7 @@ storyData = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.668, 41.955]
+                "coordinates": [-87.683864, 42.018944]
             },
             "properties": {
                 "id": "tommy",
@@ -311,7 +311,7 @@ storyData = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.740, 41.963]
+                "coordinates": [-87.700089, 41.948518]
             },
             "properties": {
                 "id": "jacqueline",
@@ -386,7 +386,7 @@ storyData = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.67, 42.01]
+                "coordinates": [-87.664252, 41.999676]
             },
             "properties": {
                 "id": "nikolaj",
